@@ -9,6 +9,10 @@
       "dest": "/projects-data/$1"
     },
     {
+      "src": "/project-template.html",
+      "dest": "/project-template.html"
+    },
+    {
       "src": "/(azabu-gardens|brilla-hongo|century-forest|ginza-plaza|harajuku-loft|kawana|minamiaoyama-house|nishiazibu-residence|park-mansion|proud-rokakoen|roppongi-hills|shibuya-towers)",
       "dest": "/$1/index.html"
     },
