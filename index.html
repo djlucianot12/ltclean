@@ -926,61 +926,7 @@
             }
         }, 2000);
     </script>
-<!-- ABOUT MODAL -->
-<div id="about-modal" class="modal hidden">
-  <div class="modal-content">
-    <button class="close" onclick="closeAbout()">×</button>
-    <h2>About LTStudioDesign</h2>
-    <p>
-      An architectural lighting and visualization atelier crafting bespoke illumination and hyper-realistic imagery for the world’s most exclusive residences. We design light as a material of architecture — blending artistic vision, technical precision, and luxury aesthetics.
-    </p>
-    <p>
-      Contact: <a href="mailto:ltstudiodesignbue@gmail.com">ltstudiodesignbue@gmail.com</a> · <a href="tel:+5493446590817">+54 9 3446 590817</a>
-    </p>
-  </div>
-</div>
 
-<!-- ALL PROJECTS MODAL -->
-<div id="all-modal" class="modal hidden">
-  <div class="modal-content">
-    <button class="close" onclick="closeAll()">×</button>
-    <h2>All Projects</h2>
-    <div id="all-projects-grid"></div>
-  </div>
-</div>
-
-<script>
-  function showAbout() {
-    const m = document.getElementById('about-modal');
-    if (m) m.classList.remove('hidden');
-  }
-  function closeAbout() {
-    const m = document.getElementById('about-modal');
-    if (m) m.classList.add('hidden');
-  }
-  function showAllProjects() {
-    const modal = document.getElementById('all-modal');
-    const grid = document.getElementById('all-projects-grid');
-    if (!modal || !grid) return;
-    grid.innerHTML = '';
-    if (typeof PROJECTS !== 'undefined' && Array.isArray(PROJECTS)) {
-      PROJECTS.forEach(p => {
-        const item = document.createElement('div');
-        item.className = 'project-card';
-        item.innerHTML = `
-          <img src="${p.image}" alt="${p.name}">
-          <h3>${p.name}</h3>
-          <p>${p.location || ''}</p>
-        `;
-        grid.appendChild(item);
-      });
-    }
-    modal.classList.remove('hidden');
-  }
-  function closeAll() {
-    const m = document.getElementById('all-modal');
-    if (m) m.classList.add('hidden');
-  }
-</script>
 </body>
 </html>
+
