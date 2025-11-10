@@ -1,0 +1,127 @@
+{
+  "project": {
+    "name": "Eclipse House",
+    "subtitle": {
+      "es": "El contraste como esencia del lujo.",
+      "en": "Contrast as the essence of luxury."
+    },
+    "description": {
+      "es": "Eclipse House explora la dualidad: luz y oscuridad como fuerzas de diseño equivalentes. Baños verticales y acentos escultóricos generan profundidad cinematográfica. Este proyecto transforma la luz artificial en narrativa arquitectónica, donde el contraste define la percepción.",
+      "en": "Eclipse House explores duality — light and darkness as equal design forces. Vertical grazes and sculptural downlights create cinematic depth. This project transforms artificial light into architectural narrative, where contrast defines perception."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Beverly Hills, USA",
+        "año": "2024",
+        "área": "8,500 m²",
+        "tipo": "Luxury Residencial"
+      },
+      "en": {
+        "location": "Beverly Hills, USA",
+        "year": "2024",
+        "area": "8,500 m²",
+        "type": "Luxury Residential"
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      {
+        "filename": "01.jpg",
+        "caption": {
+          "es": "Reflejos convertidos en movimiento.",
+          "en": "Reflections as motion"
+        }
+      },
+      {
+        "filename": "02.jpg",
+        "caption": {
+          "es": "Capas de luz que definen jerarquías.",
+          "en": "Layered light defining hierarchy."
+        }
+      },
+      {
+        "filename": "03.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "04.jpg",
+        "caption": {
+          "es": "Umbrales luminosos y vacíos.",
+          "en": "Glowing thresholds and voids."
+        }
+      },
+      {
+        "filename": "05.jpg",
+        "caption": {
+          "es": "Tonos dorados sobre mármol negro.",
+          "en": "Golden tones within black marble."
+        }
+      },
+      {
+        "filename": "06.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "07.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "08.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "09.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "10.jpg",
+        "caption": {
+          "es": "Iluminación nocturna ecológica",
+          "en": "Ecological night lighting"
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "videos": [
+      {
+        "position": 5,
+        "youtube_url": "",
+        "caption": {
+          "es": "Armonía entre naturaleza y arquitectura",
+          "en": "Harmony between nature and architecture"
+        }
+      },
+      {
+        "position": 9,
+        "youtube_url": "",
+        "caption": {
+          "es": "Construcción sostenible documentada",
+          "en": "Documented sustainable construction"
+        }
+      }
+    ]
+  }
+}

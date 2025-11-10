@@ -1,0 +1,134 @@
+{
+  "project": {
+    "name": "Axis Mansion",
+    "subtitle": {
+      "es": "La geometría iluminada por la intención.",
+      "en": "Geometry illuminated by intention."
+    },
+    "description": {
+      "es": "Axis Mansion define la precisión a través del ritmo. Cada luminaria se alinea con la lógica arquitectónica, realzando el flujo de planos verticales y horizontales. El concepto convierte el orden en belleza — la disciplina como forma de lujo.",
+      "en": "Axis Mansion defines precision through rhythm. Every luminaire aligns with architectural logic, enhancing the flow of vertical and horizontal planes. The concept turns order into beauty — discipline as luxury."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Singapore",
+        "año": "2024",
+        "área": "3,500 m²",
+        "tipo": "Complejo Lujoso"
+      },
+      "en": {
+        "location": "Singapore",
+        "year": "2024",
+        "area": "3,500 m²",
+        "type": "Luxury Complex"
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      {
+        "filename": "01.jpg",
+        "caption": {
+          "es": "",
+          "en": "T"
+        }
+      },
+      {
+        "filename": "02.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "03.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "04.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "05.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "06.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "07.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "videos": [
+      {
+        "position": 4,
+        "youtube_url": "https://youtu.be/CFasUWHc9ho",
+        "caption": {
+          "es": "Recorrido virtual de las torres",
+          "en": "Virtual tour of the towers"
+        }
+      },
+      {
+        "position": 8,
+        "youtube_url": "https://youtu.be/QkUgNbj04AY",
+        "caption": {
+          "es": "Construcción en tiempo acelerado",
+          "en": "Time-lapse construction"
+        }
+      }
+    ]
+  }
+}

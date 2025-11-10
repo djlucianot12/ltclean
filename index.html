@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135279002-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-135279002-1');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="imagetoolbar" content="no">
+    <meta name="viewport" content="initial-scale=1.0,minimum-scale=1,maximum-scale=5">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>LT STUDIO DESIGN</title>
+    <meta name="author" content="LT STUDIO DESIGN">
+    <meta name="copyright" content="LT STUDIO DESIGN">
+    <meta name="description" content="We will continue to provide architectural spaces that embody beauty and pleasure in serene settings, touching the sentiments of those who use them.">
+    <meta name="keywords" content="LT STUDIO DESIGN,今井敦,Atsushi Imai,建築,プロデュース">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMjUyNTI1Ii8+Cjx0ZXh0IHg9IjE2IiB5PSIyMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZmZmZiIgZm9udC1zaXplPSIxNCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXdlaWdodD0iYm9sZCI+TFQ8L3RleHQ+Cjwvc3ZnPgo=">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#252525">
+    <meta name="theme-color" content="#252525">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="LT STUDIO DESIGN">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png">
+    <meta property="og:description" content="We will continue to provide architectural spaces that embody beauty and pleasure in serene settings, touching the sentiments of those who use them.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="LT STUDIO DESIGN">
+    <meta name="twitter:description" content="We will continue to provide architectural spaces that embody beauty and pleasure in serene settings, touching the sentiments of those who use them.">
+    <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png">
+    
+    <!-- Original CSS -->
+    <link rel="stylesheet" href="assets/css/bundle.css">
+    
+    <!-- INTRO ANIMADA - ESTILOS -->
+    <style>
+        /* INTRO SCREEN */
+        #intro-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: #252525;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10000;
+            transition: opacity 1.5s ease;
+            cursor: none;
+        }
+
+        #intro-screen.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .intro-text {
+            font-size: 48px;
+            font-weight: 300;
+            letter-spacing: 8px;
+            text-align: center;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        .intro-text .letter {
+            display: inline-block;
+            color: #444;
+            transition: color 0.8s ease;
+        }
+
+        .intro-text .letter.filled {
+            color: white;
+        }
+
+        /* PARTICLES */
+        #particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .particle {
+            position: absolute;
+            background: white;
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-30px) rotate(120deg); }
+            66% { transform: translateY(30px) rotate(240deg); }
+        }
+
+        @media (max-width: 768px) {
+            .intro-text {
+                font-size: 2.5rem;
+                letter-spacing: 4px;
+            }
+        }
+
+        /* CUSTOM CURSOR FOR INTRO */
+        .intro-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 10001;
+            mix-blend-mode: exclusion;
+            transition: transform 0.1s ease;
+        }
+
+        /* OCULTAR CONTENIDO ORIGINAL HASTA DESPUÉS DE LA INTRO */
+        body.intro-active #wrapper {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        body.intro-complete #wrapper {
+            opacity: 1;
+            pointer-events: auto;
+            transition: opacity 1s ease;
+        }
+
+        /* CUSTOM CURSOR */
+        body {
+            cursor: none !important;
+        }
+
+        * {
+            cursor: none !important;
+        }
+
+        .custom-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 10001;
+            mix-blend-mode: exclusion;
+            transition: transform 0.05s ease-out;
+            will-change: transform;
+        }
+
+        .custom-cursor.hover {
+            transform: scale(2);
+        }
+
+        /* SHOW TEXT AND HIDE ARROW SVGs */
+        .js-control__text.p-control__arrow {
+            display: none !important;
+        }
+
+        .js-control__text.p-control__text {
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            color: #ffffff !important;
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            letter-spacing: 1px !important;
+        }
+    </style>
+</head>
+<body class="is-ready intro-active">
+
+    <!-- CUSTOM CURSOR -->
+    <div class="custom-cursor" id="customCursor"></div>
+
+    <!-- INTRO SCREEN -->
+    <div id="intro-screen">
+        <div id="particles"></div>
+        <div class="intro-text"></div>
+    </div>
+
+    <!-- CONTENIDO ORIGINAL COMPLETO -->
+    <div id="wrapper">
+        <header class="l-header js-header b-fonts__medium">
+            <div class="p-header l-wide-container">
+                <div class="p-header__left js-logo">
+                    <div class="p-header__left__inner">
+                        <a class="js-target--pointer__stateChange" href="index.html">
+                            <div class="js-target__inner--pointer__stateChange js-target__parent--spring">
+                                <svg version="1.1" id="logo" class="p-header__logo js-logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 60 23.3" style="enable-background:new 0 0 60 23.3;" xml:space="preserve">
+                                    <style type="text/css"> .st-logo { fill: #FFFFFF; } </style>
+                                    <text x="30" y="15" font-family="Arial" font-size="14" fill="#FFFFFF" text-anchor="middle" font-weight="bold">LTSD</text>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <a href="index.html" class="p-header__close c-btn--close js-target__aboutClose js-target--pointer__stateChange js-hover" data-hover-in-time="1200" data-hover-out-time="100">
+                        <div class="c-btn--close__layer front js-target__inner--pointer__stateChange js-target__parent--spring">
+                            <div class="c-btn--close__bar"><div class="c-btn--close__bar__inner js-closeBar"></div></div>
+                            <div class="c-btn--close__bar"><div class="c-btn--close__bar__inner js-closeBar"></div></div>
+                        </div>
+                        <div class="c-btn--close__layer back">
+                            <div class="c-btn--close__bar"><div class="c-btn--close__bar__inner js-closeBar"></div></div>
+                            <div class="c-btn--close__bar"><div class="c-btn--close__bar__inner js-closeBar"></div></div>
+                        </div>
+                    </a>
+                </div>
+                <a href="index.html" class="p-header__close--works-detail c-btn--close js-target__worksDetailClose js-target--pointer__stateChange js-hover" data-hover-in-time="1200" data-hover-out-time="100">
+                    <div class="c-btn--close__layer front js-target__inner--pointer__stateChange js-target__parent--spring">
+                        <div class="c-btn--close__bar"><div class="c-btn--close__bar__inner js-closeBar"></div></div>
+                        <div class="c-btn--close__bar"><div class="c-btn--close__bar__inner js-closeBar"></div></div>
+                    </div>
+                    <div class="c-btn--close__layer back">
+                        <div class="c-btn--close__bar"><div class="c-btn--close__bar__inner js-closeBar"></div></div>
+                        <div class="c-btn--close__bar"><div class="c-btn--close__bar__inner js-closeBar"></div></div>
+                    </div>
+                </a>
+                <nav class="js-nav">
+                    <ul class="p-header__list">
+                        <li class="p-header__list__item works pc">
+                            <div class="p-header__list__item__inner--works">
+                                <div class="p-header__list__item--all">
+                                    <a class="js-nav__link js-target--pointer__stateChange" href="javascript:void(0);">
+                                        <span class="js-target__inner--pointer__stateChange js-target__parent--spring">All</span>
+                                    </a>
+                                </div>
+                                <div class="p-header__list__item--focus">
+                                    <a class="js-nav__link js-target--pointer__stateChange" href="index.html">
+                                        <span class="js-target__inner--pointer__stateChange js-target__parent--spring">Focus</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="p-header__list__item has-children">
+                            <a class="js-nav__link js-target--pointer__stateChange about" href="javascript:void(0);">
+                                <span class="js-target__inner--pointer__stateChange js-target__parent--spring">About</span>
+                            </a>
+                            <div class="p-header__list__item__inner">
+                                <ul class="p-header__languageList">
+                                    <li class="p-header__languageList__item">
+                                        <a class="js-nav__link js-trigger--langChange js-target--pointer__stateChange" data-lang="en" href="#">
+                                            <span class="js-target__inner--pointer__stateChange js-target__parent--spring">En</span>
+                                        </a>
+                                    </li>
+                                    <li class="p-header__languageList__item">
+                                        <a class="js-nav__link js-trigger--langChange js-target--pointer__stateChange" data-lang="zh-cmn-Hans" href="#">
+                                            <span class="js-target__inner--pointer__stateChange js-target__parent--spring">Cn</span>
+                                        </a>
+                                    </li>
+                                    <li class="p-header__languageList__item">
+                                        <a class="js-nav__link js-trigger--langChange js-target--pointer__stateChange" data-lang="ja" href="#">
+                                            <span class="js-target__inner--pointer__stateChange js-target__parent--spring">Jp</span>
+                                        </a>
+                                    </li>
+                                    <li class="p-header__languageList__item line"></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="l-navSp b-fonts__medium js-nav">
+            <div class="p-navSp">
+                <div class="p-header__list__item__inner--works">
+                    <div class="p-header__list__item--all p-navSp__item">
+                        <a class="js-nav__link js-target--pointer__stateChange" href="javascript:void(0);">
+                            <span class="js-target__inner--pointer__stateChange js-target__parent--spring">All</span>
+                        </a>
+                    </div>
+                    <div class="p-header__list__item--focus p-navSp__item">
+                        <a class="js-nav__link js-target--pointer__stateChange" href="index.html">
+                            <span class="js-target__inner--pointer__stateChange js-target__parent--spring">Focus</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main id="page" class="js-smooth-scroll-wrapper">
+            <div id="contents" class="js-smooth-scroll-content">
+                <div id="top" class="page-content"></div>
+            </div>
+        </main>
+
+        <aside id="side-contact" class="p-sideContact">
+            <address class="l-wide-container">
+                <dl class="p-sideContact__inner js-target--sideFix">
+                    <div class="p-sideContact__unit">
+                        <dt class="b-fonts__medium">Hello.</dt>
+                        <dd>
+                            <a class="js-target--pointer__stateChange lang-fonts--en c-link--underline js-hover" data-hover-in-time="1010" data-hover-out-time="850" href="mailto:info@ltstudiodesign.com">
+                                <span class="js-target__inner--pointer__stateChange c-link--underline__inner">
+                                    info@ltstudiodesign.com
+                                    <span class="c-link--underline__line"></span>
+                                </span>
+                            </a>
+                        </dd>
+                    </div>
+                    <div class="p-sideContact__unit">
+                        <dt class="b-fonts__medium">Work Together.</dt>
+                        <dd>
+                            <a class="js-target--pointer__stateChange lang-fonts--en c-link--underline js-hover" data-hover-in-time="1010" data-hover-out-time="850" href="mailto:jobs@ltstudiodesign.com">
+                                <span class="js-target__inner--pointer__stateChange c-link--underline__inner">
+                                    jobs@ltstudiodesign.com
+                                    <span class="c-link--underline__line"></span>
+                                </span>
+                            </a>
+                        </dd>
+                    </div>
+                </dl>
+            </address>
+        </aside>
+
+        <div id="stage" class="p-stage">
+            <div id="app-canvas"></div>
+            <ul class="p-stage__menu">
+                <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./park-mansion/images/main.jpg" data-canvas-zoom="./park-mansion/images/main.jpg" data-canvas-url="project-template.html?project=park-mansion">
+                    THE SOLACE VILLA<br>Minami Azabu
+                </li>
+                <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./kawana/images/main.jpg" data-canvas-zoom="./kawana/images/main.jpg" data-canvas-url="project-template.html?project=kawana">
+                    THE AETHER RESIDENCE<br>Atmospheric Architecture
+                </li>
+                <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./azabu-gardens/images/main.jpg" data-canvas-zoom="./azabu-gardens/images/main.jpg" data-canvas-url="project-template.html?project=azabu-gardens">
+                    NOIR ESTATE<br>Silent Opulence
+                </li>
+                <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./brillia-hongo/images/main.jpg" data-canvas-zoom="./brillia-hongo/images/main.jpg" data-canvas-url="project-template.html?project=brillia-hongo">
+                    PAMPAS RESIDENCE<br>Buenos Aires Plains
+                </li>
+                <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./century-forest/images/main.jpg" data-canvas-zoom="./century-forest/images/main.jpg" data-canvas-url="project-template.html?project=century-forest">
+                    ECLIPSE HOUSE<br>Beverly Hills
+                </li>
+                <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./minamiaoyama-house/images/main.jpg" data-canvas-zoom="./minamiaoyama-house/images/main.jpg" data-canvas-url="project-template.html?project=minamiaoyama-house">
+                    SKYLINE TOWER<br>Urban Illumination — Miami
+                </li>
+                <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./nishiazabu-residence/images/main.jpg" data-canvas-zoom="./nishiazabu-residence/images/main.jpg" data-canvas-url="project-template.html?project=nishiazabu-residence">
+                    LUNARIS STATE<br>Nocturnal Geometry
+                </li>
+                <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./proud-rokakoen/images/main.jpg" data-canvas-zoom="./proud-rokakoen/images/main.jpg" data-canvas-url="project-template.html?project=proud-rokakoen">
+                    NEBULA VILLA<br>Nocturnal Geometry
+                </li>
+                <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./shibuya-towers/images/main.jpg" data-canvas-zoom="./shibuya-towers/images/main.jpg" data-canvas-url="project-template.html?project=shibuya-towers">
+                    AXIS MANSION<br>luxury Design
+                </li>
+                <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./ginza-plaza/images/main.jpg" data-canvas-zoom="./ginza-plaza/images/main.jpg" data-canvas-url="project-template.html?project=ginza-plaza">
+                    VELARIS HOUSE<br>Commercial Elegance
+                </li>
+                <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./roppongi-hills/images/main.jpg" data-canvas-zoom="./roppongi-hills/images/main.jpg" data-canvas-url="project-template.html?project=roppongi-hills">
+                    LA VIGNA STATE<br>European Mansion
+                </li>
+                <li class="p-stage__menu__item js-canvas__target" data-canvas-thumb="./harajuku-loft/images/main.jpg" data-canvas-zoom="./harajuku-loft/images/main.jpg" data-canvas-url="project-template.html?project=harajuku-loft">
+                    CRESTLINE RESIDENCE<br>
+                </li>
+            </ul>
+        </div>
+
+        <div id="indicator">
+            <div id="app-indicator"></div>
+        </div>
+
+        <div id="pageCover" class="p-pageCover js-target--height__screenFix--mobile" data-fix-height-ratio="1.1">
+            <div class="p-pageCover__inner js-target--height__screenFix--mobile" data-fix-height-ratio="1">
+                <p id="pageCoverText" class="p-pageCover__text b-fonts__medium">Next</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="app-mousePointer"></div>
+
+    <div id="wait-loader" class="l-wide-container p-waitLoader">
+        <div class="p-waitLoader__inner">
+            <div class="p-waitLoader__circle">
+                <div class="p-waitLoader__layer back"></div>
+                <div class="p-waitLoader__layer front"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading" class="p-loading">
+        <div class="p-loading__outer">
+            <div class="p-loading__bg"></div>
+            <div class="p-loading__inner">
+                <div>
+                    <div class="p-loading__front">
+                        <div class="p-loading__front__inner">
+                            <svg class="p-loading__logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 447 26.8" style="enable-background:new 0 0 447 26.8;" xml:space="preserve">
+                                <style type="text/css">.st-logo-load { fill: #666; }</style>
+                                <text x="150" y="20" font-family="Arial" font-size="15" fill="#666">LT STUDIO DESIGN</text>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="p-loading__back">
+                        <div class="p-loading__back__inner">
+                            <svg class="p-loading__logo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 447 26.8" style="enable-background:new 0 0 447 26.8;" xml:space="preserve">
+                                <style type="text/css">.st-logo-load-back { fill: #fff; }</style>
+                                <text x="150" y="20" font-family="Arial" font-size="15" fill="#fff">LT STUDIO DESIGN</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-alert js-target--height__screenFix--mobile">
+        <p class="p-alert__text b-fonts__medium">Rotate your device.</p>
+    </div>
+
+    <!-- SIMPLE TIMING LIKE BACKUP -->
+    <script>
+        console.log('��️ Using working carousel timing from backup');
+    </script>
+
+    <!-- SCRIPTS ORIGINALES -->
+    <script src="assets/js/vendor.bundle.js" defer></script>
+    <script src="assets/js/app.bundle.js" defer></script>
+
+    <!-- SCRIPT DE INTRO ANIMADA -->
+    <script>
+        // CREAR PARTÍCULAS
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            if (!particlesContainer) return;
+
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.width = (Math.random() * 4 + 1) + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
+
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // ANIMAR TEXTO LETRA POR LETRA CON EXPLOSIÓN
+        function animateIntroText() {
+            console.log('📝 Iniciando animación de texto intro');
+            const introText = document.querySelector('.intro-text');
+            const text = 'LT STUDIO DESIGN';
+
+            if (!introText) {
+                console.error('❌ No se encontró .intro-text');
+                return;
+            }
+
+            introText.innerHTML = '';
+
+            // Crear spans para cada letra
+            const letters = [];
+            text.split('').forEach((letter, index) => {
+                const span = document.createElement('span');
+                span.className = 'letter';
+                span.style.display = 'inline-block';
+                span.style.transition = 'color 0.8s ease';
+                span.style.color = '#444';
+                span.textContent = letter === ' ' ? '\u00A0' : letter;
+                introText.appendChild(span);
+                letters.push(span);
+            });
+
+            console.log(`📝 Creadas ${letters.length} letras`);
+
+            // Animar letra por letra
+            letters.forEach((letter, index) => {
+                setTimeout(() => {
+                    letter.style.color = '#ffffff';
+                    letter.classList.add('filled');
+                    console.log(`📝 Letra ${index + 1} animada`);
+
+                    // Si es la última letra, hacer EXPLOSIÓN
+                    if (index === letters.length - 1) {
+                        console.log('🎯 Última letra completada, iniciando EXPLOSIÓN en 2 segundos');
+                        setTimeout(() => {
+                            console.log('💥 ¡EXPLOSIÓN MEGA ESPECTACULAR!');
+
+                            // EXPLOTAR CADA LETRA
+                            letters.forEach((letter, i) => {
+                                setTimeout(() => {
+                                    // 5 copias voladoras por letra
+                                    for (let j = 0; j < 5; j++) {
+                                        const flying = document.createElement('span');
+                                        flying.textContent = letter.textContent;
+                                        flying.style.position = 'fixed';
+                                        flying.style.zIndex = '15000';
+                                        flying.style.fontSize = '3rem';
+                                        flying.style.fontWeight = 'bold';
+                                        flying.style.color = '#fff';
+                                        flying.style.pointerEvents = 'none';
+                                        flying.style.textShadow = '0 0 10px rgba(255,255,255,0.8)';
+
+                                        const rect = letter.getBoundingClientRect();
+                                        flying.style.left = rect.left + 'px';
+                                        flying.style.top = rect.top + 'px';
+
+                                        document.body.appendChild(flying);
+
+                                        // Animación de vuelo explosivo
+                                        const angle = (Math.PI * 2 * j / 5) + (Math.random() * 0.8);
+                                        const distance = 400 + Math.random() * 600;
+                                        const endX = rect.left + Math.cos(angle) * distance;
+                                        const endY = rect.top + Math.sin(angle) * distance;
+
+                                        flying.style.transition = 'all 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                                        
+                                        setTimeout(() => {
+                                            flying.style.transform = `translate(${endX - rect.left}px, ${endY - rect.top}px) rotate(${720 + Math.random() * 360}deg) scale(${0.2 + Math.random() * 0.5})`;
+                                            flying.style.opacity = '0';
+                                        }, 50);
+
+                                        setTimeout(() => {
+                                            if (flying.parentNode) {
+                                                flying.parentNode.removeChild(flying);
+                                            }
+                                        }, 2500);
+                                    }
+
+                                    // Ocultar letra original
+                                    letter.style.transition = 'all 0.8s ease-out';
+                                    letter.style.transform = 'scale(0) rotate(180deg)';
+                                    letter.style.opacity = '0';
+
+                                }, i * 80);
+                            });
+
+                            // Transición final después de la explosión
+                            setTimeout(() => {
+                                console.log('🌟 Completando transición a página principal');
+                                const introScreen = document.getElementById('intro-screen');
+                                const body = document.body;
+
+                                // Fade out del intro
+                                introScreen.style.opacity = '0';
+
+                                setTimeout(() => {
+                                    // Ocultar intro completamente
+                                    introScreen.classList.add('hidden');
+                                    introScreen.style.display = 'none';
+
+                                    // Mostrar contenido original
+                                    body.classList.remove('intro-active');
+                                    body.classList.add('intro-complete');
+
+                                    console.log('✅ Página original visible con todas sus animaciones');
+                                }, 1500);
+                            }, 4000);
+
+                        }, 2000);
+                    }
+                }, index * 150);
+            });
+        }
+
+        // INICIALIZAR INTRO
+        function initIntro() {
+            console.log('🚀 Inicializando intro animada');
+
+            const introScreen = document.getElementById('intro-screen');
+            if (introScreen) {
+                introScreen.style.display = 'flex';
+                introScreen.style.opacity = '1';
+                console.log('✅ Intro screen visible');
+
+                // Crear partículas
+                createParticles();
+
+                // Iniciar animación después de 1 segundo
+                setTimeout(() => {
+                    animateIntroText();
+                }, 1000);
+            }
+        }
+
+
+
+        // Override de las URLs problemáticas para que funcionen los templates
+        document.addEventListener('click', function(e) {
+            const target = e.target.closest('.js-canvas__target');
+            if (target && target.dataset.canvasUrl) {
+                e.preventDefault();
+                const url = target.dataset.canvasUrl;
+                if (url.includes('.html')) {
+                    window.location.href = url;
+                }
+            }
+        });
+
+
+
+        // INICIAR CUANDO LA PÁGINA ESTÉ LISTA
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('📱 DOM Content Loaded');
+
+            // Check if we should skip intro (coming from projects)
+            if (window.location.hash === '#skip-intro') {
+                console.log('🔄 Saltando intro, viniendo de proyecto');
+
+                // Hide intro screen immediately
+                const introScreen = document.getElementById('intro-screen');
+                if (introScreen) {
+                    introScreen.style.display = 'none';
+                }
+
+                // Show homepage immediately
+                document.body.classList.remove('intro-active');
+                document.body.classList.add('intro-complete');
+
+                // Clear the hash from URL
+                window.history.replaceState({}, '', window.location.pathname);
+
+            } else {
+                // Normal intro flow
+                setTimeout(() => {
+                    initIntro();
+                }, 100);
+            }
+        });
+
+        if (document.readyState !== 'loading') {
+            console.log('⚡ DOM already loaded');
+
+            if (window.location.hash === '#skip-intro') {
+                // Skip intro
+                const introScreen = document.getElementById('intro-screen');
+                if (introScreen) introScreen.style.display = 'none';
+                document.body.classList.remove('intro-active');
+                document.body.classList.add('intro-complete');
+                window.history.replaceState({}, '', window.location.pathname);
+            } else {
+                setTimeout(initIntro, 100);
+            }
+        }
+
+        console.log('🎉 LT STUDIO DESIGN con intro cargado');
+
+        // Initialize custom cursor
+        function initCustomCursor() {
+            const cursor = document.getElementById('customCursor');
+
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = e.clientX - 10 + 'px';
+                cursor.style.top = e.clientY - 10 + 'px';
+            });
+
+            // Hover effects
+            document.addEventListener('mouseover', (e) => {
+                if (e.target.matches('a, button, .js-canvas__target, .js-target--pointer__stateChange')) {
+                    cursor.classList.add('hover');
+                }
+            });
+
+            document.addEventListener('mouseout', (e) => {
+                if (e.target.matches('a, button, .js-canvas__target, .js-target--pointer__stateChange')) {
+                    cursor.classList.remove('hover');
+                }
+            });
+        }
+
+        // Initialize cursor when page loads
+        initCustomCursor();
+
+        const fallbackCircleImages = {
+            'park-mansion': 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop',
+            'kawana': 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&h=600&fit=crop',
+            'azabu-gardens': 'https://images.unsplash.com/photo-1448630360428-65456885c650?w=800&h=600&fit=crop',
+            'brillia-hongo': 'https://images.unsplash.com/photo-1513584684374-8bab748fbf90?w=800&h=600&fit=crop',
+            'century-forest': 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800&h=600&fit=crop',
+            'minamiaoyama-house': 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&h=600&fit=crop',
+            'nishiazabu-residence': 'https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?w=800&h=600&fit=crop',
+            'proud-rokakoen': 'https://images.unsplash.com/photo-1511818966892-d5d671d0faa2?w=800&h=600&fit=crop',
+            'shibuya-towers': 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&h=600&fit=crop',
+            'ginza-plaza': 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=600&fit=crop',
+            'roppongi-hills': 'https://images.unsplash.com/photo-1538991383142-36c4edeaffde?w=800&h=600&fit=crop',
+            'harajuku-loft': 'https://images.unsplash.com/photo-1480796927426-f609979314bd?w=800&h=600&fit=crop'
+        };
+
+        function buildCanvasImageSources(projectName, filename) {
+            if (!filename) {
+                return [];
+            }
+
+            const sanitizedFilename = filename.trim();
+            const relativeCandidates = [
+                `${projectName}/images/${sanitizedFilename}`,
+                `./${projectName}/images/${sanitizedFilename}`,
+                `/${projectName}/images/${sanitizedFilename}`,
+                `projects-data/${projectName}/images/${sanitizedFilename}`,
+                `./projects-data/${projectName}/images/${sanitizedFilename}`,
+                `/projects-data/${projectName}/images/${sanitizedFilename}`
+            ];
+
+            const absoluteCandidates = relativeCandidates.map(path => {
+                try {
+                    return new URL(path, window.location.origin).href;
+                } catch (error) {
+                    return path;
+                }
+            });
+
+            return Array.from(new Set([...relativeCandidates, ...absoluteCandidates]));
+        }
+
+        function loadFirstExistingImage(urls) {
+            return new Promise(resolve => {
+                if (!urls.length) {
+                    resolve(null);
+                    return;
+                }
+
+                const tryNext = (index) => {
+                    if (index >= urls.length) {
+                        resolve(null);
+                        return;
+                    }
+
+                    const tester = new Image();
+                    tester.onload = () => resolve(urls[index]);
+                    tester.onerror = () => tryNext(index + 1);
+                    tester.src = urls[index];
+                };
+
+                tryNext(0);
+            });
+        }
+
+        async function fetchProjectConfig(projectName) {
+            const configPaths = [
+                `projects-data/${projectName}/config.json`,
+                `/projects-data/${projectName}/config.json`,
+                `${projectName}/config.json`,
+                `./${projectName}/config.json`,
+                `/${projectName}/config.json`
+            ];
+
+            for (const path of configPaths) {
+                try {
+                    const response = await fetch(path);
+                    if (response.ok) {
+                        console.log(`✅ Loaded circle config from ${path}`);
+                        return await response.json();
+                    }
+                    console.log(`⚠️ Circle config not found at ${path} (status ${response.status})`);
+                } catch (error) {
+                    console.log(`⚠️ Error loading circle config from ${path}`, error);
+                }
+            }
+
+            return null;
+        }
+
+        function extractProjectNameFromUrl(rawUrl) {
+            if (!rawUrl) {
+                return '';
+            }
+
+            try {
+                const parsed = new URL(rawUrl, window.location.origin);
+                const paramName = parsed.searchParams.get('project');
+                if (paramName) {
+                    return paramName;
+                }
+            } catch (error) {
+                // Fall back to manual parsing
+            }
+
+            const marker = 'project=';
+            const index = rawUrl.indexOf(marker);
+            if (index === -1) {
+                return '';
+            }
+
+            const substring = rawUrl.substring(index + marker.length);
+            const ampIndex = substring.indexOf('&');
+            return ampIndex === -1 ? substring : substring.substring(0, ampIndex);
+        }
+
+        // Load main images for projects in the circle
+        async function loadProjectMainImages() {
+            const canvasTargets = Array.from(document.querySelectorAll('.js-canvas__target[data-canvas-url]'));
+            if (!canvasTargets.length) {
+                return;
+            }
+
+            const projectMap = new Map();
+
+            canvasTargets.forEach(target => {
+                const rawUrl = target.getAttribute('data-canvas-url') || '';
+                const projectName = extractProjectNameFromUrl(rawUrl);
+                if (!projectName) {
+                    return;
+                }
+
+                if (!projectMap.has(projectName)) {
+                    projectMap.set(projectName, {
+                        targets: [],
+                        fallbackThumb: target.getAttribute('data-canvas-thumb') || '',
+                        fallbackZoom: target.getAttribute('data-canvas-zoom') || ''
+                    });
+                }
+
+                const projectEntry = projectMap.get(projectName);
+                projectEntry.targets.push(target);
+                if (!projectEntry.fallbackThumb) {
+                    projectEntry.fallbackThumb = target.getAttribute('data-canvas-thumb') || '';
+                }
+                if (!projectEntry.fallbackZoom) {
+                    projectEntry.fallbackZoom = target.getAttribute('data-canvas-zoom') || '';
+                }
+            });
+
+            await Promise.all(
+                Array.from(projectMap.entries()).map(async ([projectName, projectEntry]) => {
+                    const config = await fetchProjectConfig(projectName);
+                    const media = config && config.media ? config.media : null;
+                    const mainImageFile = media ? (media.main_image || media.mainImage) : null;
+
+                    if (!mainImageFile) {
+                        return;
+                    }
+
+                    const imageCandidates = buildCanvasImageSources(projectName, mainImageFile);
+                    const resolvedImage = await loadFirstExistingImage(imageCandidates);
+                    const fallbackImage = fallbackCircleImages[projectName] || fallbackCircleImages['park-mansion'];
+                    const finalImage = resolvedImage || projectEntry.fallbackThumb || projectEntry.fallbackZoom || fallbackImage;
+
+                    if (!finalImage) {
+                        return;
+                    }
+
+                    projectEntry.targets.forEach(target => {
+                        target.setAttribute('data-canvas-thumb', finalImage);
+                        target.setAttribute('data-canvas-zoom', finalImage);
+                        target.dataset.canvasThumb = finalImage;
+                        target.dataset.canvasZoom = finalImage;
+
+                        console.log(`🔄 Updated circle thumbnail for ${projectName}:`, finalImage);
+
+                        const circleLayer = target.querySelector('.p-stage__circleThumb');
+                        if (circleLayer) {
+                            circleLayer.style.backgroundImage = `url("${finalImage}")`;
+                        }
+                    });
+
+                    if (window.app && typeof window.app.updateView === 'function') {
+                        window.app.updateView();
+                    }
+                    if (window.app && typeof window.app.render === 'function') {
+                        window.app.render();
+                    }
+                })
+            );
+        }
+
+        // Load main images after intro completes
+        setTimeout(() => {
+            loadProjectMainImages();
+        }, 2000);
+    </script>
+
+    <!-- SCRIPT PARA SINCRONIZAR IMÁGENES Y AJUSTAR TIMING -->
+    <script>
+
+
+
+    </script>
+
+    <!-- VERIFICAR QUE EL CAROUSEL EMPIECE DESDE PROYECTO 1 -->
+    <script>
+        // Asegurar que el carousel inicie desde el primer proyecto
+        document.addEventListener('DOMContentLoaded', function() {
+            // Monitorear cuando el carousel se habilite
+            const checkCarousel = setInterval(() => {
+                if (window.CAROUSEL_ALLOWED) {
+                    clearInterval(checkCarousel);
+                    console.log('🎯 Carousel habilitado, verificando que empiece desde proyecto 1');
+
+                    // Verificar después de un momento que esté en el proyecto correcto
+                    setTimeout(() => {
+                        if (window.app && window.app.currentIndex !== 0) {
+                            console.log('���� Corrigiendo índice del carousel a proyecto 1');
+                            window.app.currentIndex = 0;
+                            if (window.app.updateView) window.app.updateView();
+                        }
+                    }, 1000);
+                }
+            }, 500);
+        });
+
+        // Override project duration to fix timing issue
+        setTimeout(function() {
+            // Extend project display duration
+            if (window.TweenMax && window.TimelineMax) {
+                // Slow down any auto-progression
+                const originalTimeScale = 1;
+                const newTimeScale = 0.3; // Slower = longer display time
+
+                // Override timeline speeds if they exist
+                document.addEventListener('click', function(e) {
+                    if (e.target.closest('.js-canvas__target')) {
+                        // Give more time between project transitions
+                        setTimeout(() => {
+                            if (window.gsap && window.gsap.globalTimeline) {
+                                window.gsap.globalTimeline.timeScale(newTimeScale);
+                            }
+                        }, 100);
+                    }
+                });
+            }
+        }, 2000);
+    </script>
+</body>
+</html>

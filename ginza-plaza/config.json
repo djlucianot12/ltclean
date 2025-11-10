@@ -1,0 +1,134 @@
+{
+  "project": {
+    "name": "Velaris House",
+    "subtitle": {
+      "es": "El lujo modelado por el viento del océano y la sombra.",
+      "en": "Luxury shaped by ocean wind and shadow."
+    },
+    "description": {
+      "es": "Velaris House explora la conexión sensorial entre la luz y el movimiento. La iluminación arquitectónica interactúa con el aire, el agua y los reflejos de los materiales, creando atmósferas vivas que cambian con el tiempo.",
+      "en": "Velaris House explores the sensory connection between light and movement. The architectural lighting interacts with airflow, water, and material reflection — producing living atmospheres that shift with time."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Sydney, Australia",
+        "año": "2024",
+        "área": "6,700 m²",
+        "tipo": "Luxury mansion"
+      },
+      "en": {
+        "location": "Sydney, Australia",
+        "year": "2024",
+        "area": "6,700 m²",
+        "type": "Luxury mansion"
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      {
+        "filename": "01.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "02.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "03.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "04.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "05.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "06.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "07.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "videos": [
+      {
+        "position": 3,
+        "youtube_url": "",
+        "caption": {
+          "es": "Experiencia de compras premium",
+          "en": "Premium shopping experience"
+        }
+      },
+      {
+        "position": 7,
+        "youtube_url": "",
+        "caption": {
+          "es": "Fusión de tradición y modernidad",
+          "en": "Fusion of tradition and modernity"
+        }
+      }
+    ]
+  }
+}

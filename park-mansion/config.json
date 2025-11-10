@@ -1,0 +1,134 @@
+{
+  "project": {
+    "name": "The Solace Villa",
+    "subtitle": {
+      "es": "El silencio iluminado.",
+      "en": "Silence illuminated."
+    },
+    "description": {
+      "es": "The Solace Villa se integra al paisaje alpino de Zermatt. Su concepto lumínico explora la serenidad mediante la precisión: los detalles lineales acentúan la estructura, mientras una calidez difusa contrasta con el entorno frío. Cada espacio esculpe la luz desde la contención, permitiendo que ella defina la sensación de soledad y abrigo.",
+      "en": "The Solace Villa lies embedded within the alpine landscape of Zermatt. Its lighting concept explores serenity through precision — linear details emphasize structure while diffused warmth counterbalances the surrounding cold. Each space is sculpted by reflection and restraint, allowing light to define the feeling of solitude and comfort."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Zermatt, Switzerland",
+        "año": "2024",
+        "área": "5,250 m²",
+        "tipo": "Residencial de Lujo"
+      },
+      "en": {
+        "location": "Zermatt, Switzerland",
+        "year": "2024",
+        "area": "5,250 m²",
+        "type": "Luxury Residential"
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      {
+        "filename": "01.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "02.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "03.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "04.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "05.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "06.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "07.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "08.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "09.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "10.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "11.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "12.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "videos": [
+      {
+        "position": 3,
+        "youtube_url": "",
+        "caption": {
+          "es": "Recorrido virtual del desarrollo",
+          "en": "Virtual tour of the development"
+        }
+      },
+      {
+        "position": 7,
+        "youtube_url": "",
+        "caption": {
+          "es": "Proceso de construcción",
+          "en": "Construction process"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "project": {
+    "name": "Lunaris Estate",
+    "subtitle": {
+      "es": "Moonlight redefined through design.",
+      "en": "La luz de la luna redefinida a través del diseño."
+    },
+    "description": {
+      "es": "Lunaris Estate traduce la serenidad nocturna al lenguaje arquitectónico. Fuentes lineales ocultas delinean curvaturas de travertino y vidrio; la luminancia exterior refleja gradientes lunares. Cada rincón se convierte en un observatorio silencioso de reflejos y ritmo.",
+      "en": "Lunaris Estate translates nocturnal serenity into architectural language. Hidden linear sources trace curvatures of travertine and glass; exterior luminance mirrors lunar gradients. Every corner becomes a quiet observatory of reflection and rhythm."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Lake Geneva, Switzerland",
+        "año": "2025",
+        "área": "4,600 m²",
+        "tipo": "Luxury house"
+      },
+      "en": {
+        "location": "Lake Geneva, Switzerland",
+        "year": "2025",
+        "area": "4,600 m²",
+        "type": "Luxury house"
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      { "filename": "01.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "02.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "03.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "04.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "05.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "06.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "07.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "08.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "09.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "10.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "", "caption": { "es": "", "en": "" } },
+      { "filename": "", "caption": { "es": "", "en": "" } }
+    ],
+    "videos": [{
+"position": 3,
+"youtube_url": "https://youtu.be/ZCcr_PmkUKs",
+"caption": { "es": "Recorrido virtual", "en": "Virtual tour" }
+},
+{
+"position": 7,
+"youtube_url": "https://youtu.be/rnMr_Nw8vaU",
+"caption": { "es": "Proceso de obra", "en": "Construction process" }
+}]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "routes": [
+    {
+      "src": "/assets/(.*)",
+      "dest": "/assets/$1"
+    },
+    {
+      "src": "/projects-data/(.*)",
+      "dest": "/projects-data/$1"
+    },
+    {
+      "src": "/(azabu-gardens|brilla-hongo|century-forest|ginza-plaza|harajuku-loft|kawana|minamiaoyama-house|nishiazibu-residence|park-mansion|proud-rokakoen|roppongi-hills|shibuya-towers)",
+      "dest": "/$1/index.html"
+    },
+    {
+      "src": "/(azabu-gardens|brilla-hongo|century-forest|ginza-plaza|harajuku-loft|kawana|minamiaoyama-house|nishiazibu-residence|park-mansion|proud-rokakoen|roppongi-hills|shibuya-towers)/(.*)",
+      "dest": "/$1/$2"
+    },
+    {
+      "src": "/.*",
+      "dest": "/index.html"
+    }
+  ]
+}

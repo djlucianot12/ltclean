@@ -1,0 +1,10 @@
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="600" fill="#1a1a3a"/>
+<rect x="200" y="50" width="80" height="450" fill="#2a2a5a"/>
+<rect x="320" y="30" width="100" height="470" fill="#3a3a6a"/>
+<rect x="460" y="40" width="90" height="460" fill="#2a2a5a"/>
+<rect x="580" y="70" width="70" height="430" fill="#1a1a4a"/>
+<text x="400" y="350" text-anchor="middle" fill="#ffffff" font-size="32" font-family="Arial, sans-serif" font-weight="bold">BRILLIA HONGO</text>
+<text x="400" y="390" text-anchor="middle" fill="#cccccc" font-size="18" font-family="Arial, sans-serif">Brillo Metropolitano</text>
+<text x="400" y="550" text-anchor="middle" fill="#999999" font-size="14" font-family="Arial, sans-serif">Reemplaza esta imagen con tu foto real</text>
+</svg>

@@ -1,0 +1,134 @@
+{
+  "project": {
+    "name": "Crestline Residence",
+    "subtitle": {
+      "es": "La luz como paisaje.",
+      "en": "Light as landscape."
+    },
+    "description": {
+      "es": "Ubicada en las colinas de Los Ángeles, Crestline Residence explora la luz como una extensión del paisaje. Líneas de luminancia recorren el horizonte arquitectónico, fusionando la percepción interior y exterior. Cada reflejo se vuelve parte del terreno: vidrio, hormigón y cielo en un mismo flujo visual.",
+      "en": "Perched on the Los Angeles hills, Crestline Residence explores light as an extension of the surrounding landscape. Linear luminance traces the architectural horizon, blending interior and exterior perception. Every reflection becomes part of the terrain — glass, concrete and sky converging in a seamless visual continuum."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Los Angeles, USA",
+        "año": "2024",
+        "área": "6,600 m²",
+        "tipo": "Mansion"
+      },
+      "en": {
+        "location": "Los Angeles, USA",
+        "year": "2024",
+        "area": "6,600 m²",
+        "type": "Mansion"
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      {
+        "filename": "01.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "02.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "03.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "04.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "05.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "06.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "07.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "08.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "09.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "10.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "11.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "12.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "videos": [
+      {
+        "position": 6,
+        "youtube_url": "",
+        "caption": {
+          "es": "Creatividad sin límites",
+          "en": "Creativity without limits"
+        }
+      },
+      {
+        "position": 10,
+        "youtube_url": "",
+        "caption": {
+          "es": "Espacios que inspiran",
+          "en": "Spaces that inspire"
+        }
+      }
+    ]
+  }
+}

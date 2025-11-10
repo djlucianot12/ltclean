@@ -1,0 +1,134 @@
+{
+  "project": {
+    "name": "La Vigna Estate",
+    "subtitle": {
+      "es": "Luz atemporal dentro de la piedra ancestral.",
+      "en": "Timeless light within ancestral stone."
+    },
+    "description": {
+      "es": "Entre los viñedos de la Toscana, La Vigna Estate reinterpreta la arquitectura europea tradicional a través de un diseño lumínico contemporáneo. Una luz cálida e indirecta recorre el ritmo de los arcos y bóvedas, realzando las texturas de terracota y los umbrales de mármol. La iluminación exterior se integra con el paisaje, generando un diálogo fluido entre el patrimonio y la sofisticación moderna.",
+      "en": "Nestled among the vineyards of Tuscany, La Vigna Estate reinterprets traditional European architecture through contemporary lighting design. Warm indirect light follows the rhythm of arches and vaults, enhancing terracotta textures and marble thresholds. Exterior luminance integrates with the surrounding landscape, creating a seamless dialogue between heritage and modern refinement."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Tuscany, Italy",
+        "año": "2024",
+        "área": "14,200 m²",
+        "tipo": "European mansion"
+      },
+      "en": {
+        "location": "Tuscany, Italy",
+        "year": "2024",
+        "area": "14,200 m²",
+        "type": "European mansion"
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      {
+        "filename": "01.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "02.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "03.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "04.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "05.jpg",
+        "caption": {
+          "es": "°",
+          "en": ""
+        }
+      },
+      {
+        "filename": "06.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "07.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "08.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "09.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "10.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "11.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "12.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ],
+    "videos": [
+      {
+        "position": 5,
+        "youtube_url": "",
+        "caption": {
+          "es": "La ciudad del futuro hoy",
+          "en": "The city of the future today"
+        }
+      },
+      {
+        "position": 9,
+        "youtube_url": "",
+        "caption": {
+          "es": "Innovación arquitectónica",
+          "en": "Architectural innovation"
+        }
+      }
+    ]
+  }
+}

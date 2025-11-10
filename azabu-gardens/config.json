@@ -1,0 +1,127 @@
+{
+  "project": {
+    "name": "Noir Estate",
+    "subtitle": {
+      "es": "El arte de la oscuridad iluminado por el control.",
+      "en": "The art of darkness illuminated by control."
+    },
+    "description": {
+      "es": "Noir Estate encarna la opulencia silenciosa. Tonos materiales profundos — roble ahumado, ónix y terciopelo — se revelan mediante gradientes de luz controlada. Cada luminaria es una pincelada que transforma las sombras en lujo.",
+      "en": "Noir Estate embodies silent opulence. Deep material tones — smoked oak, onyx, velvet — are revealed through controlled light gradients. Each luminaire becomes a brushstroke, transforming shadows into luxury."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Monaco",
+        "año": "2025",
+        "área": "9000 m²",
+        "tipo": "Residencial Premium"
+      },
+      "en": {
+        "location": "Monaco",
+        "year": "2025",
+        "area": "9000 m²",
+        "type": "Premium Residential"
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      {
+        "filename": "01.jpg",
+        "caption": {
+          "es": "Entrada principal con jardín",
+          "en": "Main entrance with  garden"
+        }
+      },
+      {
+        "filename": "02.jpg",
+        "caption": {
+          "es": "fachada nocturna como escultura.",
+          "en": "nocturnal façade as sculpture"
+        }
+      },
+      {
+        "filename": "03.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "05.jpg",
+        "caption": {
+          "es": "Senderos entre jardines comunitarios",
+          "en": "Pathways through community gardens"
+        }
+      },
+      {
+        "filename": "06.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "07.jpg",
+        "caption": {
+          "es": "Piscina natural entre vegetación",
+          "en": "Natural pool among vegetation"
+        }
+      },
+      {
+        "filename": "08.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "09.jpg",
+        "caption": {
+          "es": "Detalles de jardinería sostenible",
+          "en": "Sustainable gardening details"
+        }
+      },
+      {
+        "filename": "10.jpg",
+        "caption": {
+          "es": "Vista nocturna de iluminación LED",
+          "en": "Evening view of LED lighting"
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "Vista aérea del complejo verde",
+          "en": "Aerial view of green complex"
+        }
+      }
+    ],
+    "videos": [
+      {
+        "position": 3,
+        "youtube_url": "https://youtu.be/cox327HGn-Y",
+        "caption": {
+          "es": "Tour virtual de los jardines",
+          "en": "Virtual tour of the gardens"
+        }
+      },
+      {
+        "position": 8,
+        "youtube_url": "https://youtu.be/KdqguAWmZ98",
+        "caption": {
+          "es": "Proceso de construcción ecológica",
+          "en": "Ecological construction process"
+        }
+      }
+    ]
+  }
+}

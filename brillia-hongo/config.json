@@ -1,0 +1,127 @@
+{
+  "project": {
+    "name": "Pampas Residence",
+    "subtitle": {
+      "es": "Donde la calidez sudamericana se une a la pureza arquitectónica.",
+      "en": "Where South American warmth meets architectural purity."
+    },
+    "description": {
+      "es": "Ubicada en las llanuras serenas de Buenos Aires, Pampas Residence encarna la elegancia latinoamericana a través de la contención. Texturas naturales — piedra, madera, lino — dialogan con una iluminación lineal cálida que realza el volumen y la profundidad. El concepto equilibra apertura e intimidad, generando un diálogo entre la identidad material local y la sofisticación contemporánea.",
+      "en": "Set within the serene plains of Buenos Aires, Pampas Residence embodies Latin elegance through restraint. Natural textures — stone, timber, linen — interact with warm linear lighting that enhances volume and depth. The concept balances openness and intimacy, creating a dialogue between local material identity and contemporary sophistication."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Buenos Aires, Argentina",
+        "año": "2025",
+        "área": " 4,100 m²",
+        "tipo": "Residencial de Lujo"
+      },
+      "en": {
+        "location": "Buenos Aires, Argentina",
+        "year": "2025",
+        "area": "4,100 m²",
+        "type": "Luxury Residential"
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      {
+        "filename": "01.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "02.jpg",
+        "caption": {
+          "es": "Lobby con mármol de Carrara",
+          "en": "Lobby with Carrara marble"
+        }
+      },
+      {
+        "filename": "03.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "04.jpg",
+        "caption": {
+          "es": "reflejos nocturnos integrados al paisaje.",
+          "en": "night reflections merging with landscape."
+        }
+      },
+      {
+        "filename": "05.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "06.jpg",
+        "caption": {
+          "es": "Suite principal con vestidor",
+          "en": "Master suite with walk-in closet"
+        }
+      },
+      {
+        "filename": "07.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "08.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "09.jpg",
+        "caption": {
+          "es": "luz rasante sobre paneles de roble.",
+          "en": "soft grazing light across oak panels"
+        }
+      },
+      {
+        "filename": "10.jpg",
+        "caption": {
+          "es": "reflejos cálidos sobre piedra natural.",
+          "en": "warm reflections on natural stone."
+        }
+      },
+      {
+        "filename": "11.jpg",
+        "caption": {
+          "es": "Vista aérea del distrito",
+          "en": "Aerial view of the district"
+        }
+      }
+    ],
+    "videos": [
+      {
+        "position": 4,
+        "youtube_url": "https://youtu.be/vJcvs9fti_s",
+        "caption": {
+          "es": "Recorrido de lujo interior",
+          "en": "Luxury interior walkthrough"
+        }
+      },
+      {
+        "position": 9,
+        "youtube_url": "https://youtu.be/oVcWgMDAnkc",
+        "caption": {
+          "es": "Proceso de construcción avanzada",
+          "en": "Advanced construction process"
+        }
+      }
+    ]
+  }
+}

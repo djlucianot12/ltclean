@@ -1,0 +1,54 @@
+{
+  "project": {
+    "name": "Skyline Tower Lighting Concept",
+    "subtitle": {
+      "es": "Ritmo vertical, precisión iluminada.",
+      "en": "Vertical rhythm, illuminated precision."
+    },
+    "description": {
+      "es": "Elevándose sobre la costa de Miami, Skyline Tower redefine la relación entre arquitectura e identidad nocturna. El concepto lumínico resalta el ritmo vertical mediante uplights en la fachada y paneles transparentes que generan un flujo continuo de luz, destacando la composición estructural de la torre. La iluminación interior realza las zonas de circulación, transformando el edificio en una escultura viva que respira con el horizonte urbano.",
+      "en": "CRising along the Miami waterfront, Skyline Tower redefines the relationship between architecture and night identity. The lighting concept emphasizes vertical rhythm through façade uplights and transparent spandrels, creating a continuous flow of light that highlights the tower’s structural composition. Interior luminance enhances circulation zones, turning the building into a living sculpture that breathes with the city’s skyline."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Miami, USA",
+        "año": "2024",
+        "área": "47,000 m²",
+        "tipo": "Lighting tower"
+      },
+      "en": {
+        "location": "Miami, USA",
+        "year": "2024",
+        "area": "47,000 m²",
+        "type": "Lighting tower"
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      { "filename": "01.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "02.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "03.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "04.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "05.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "06.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "", "caption": { "es": "", "en": "" } },
+      { "filename": "", "caption": { "es": "", "en": "" } },
+      { "filename": "", "caption": { "es": "", "en": "" } },
+      { "filename": "", "caption": { "es": "", "en": "" } },
+      { "filename": "", "caption": { "es": "", "en": "" } },
+      { "filename": "", "caption": { "es": "", "en": "" } }
+    ],
+    "videos": [{
+"position": 3,
+"youtube_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+"caption": { "es": "Recorrido virtual", "en": "Virtual tour" }
+},
+{
+"position": 7,
+"youtube_url": "https://youtu.be/9bZkp7q19f0",
+"caption": { "es": "Proceso de obra", "en": "Construction process" }
+}]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "asmobius-static-site",
+  "version": "1.0.0",
+  "description": "LT STUDIO DESIGN static website",
+  "scripts": {
+    "dev": "npx serve -p 3000 .",
+    "start": "npx serve -p 3000 ."
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

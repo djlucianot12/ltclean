@@ -1,0 +1,54 @@
+{
+  "project": {
+    "name": "Nebula Villa",
+    "subtitle": {
+      "es": "Un equilibrio celestial entre la luz y el horizonte.",
+      "en": "A celestial balance between light and horizon."
+    },
+    "description": {
+      "es": "Nebula Villa emerge del terreno volcánico como una constelación de volúmenes. La iluminación se integra con la arquitectura, produciendo gradientes que imitan el crepúsculo. El resultado: un equilibrio escultórico entre luminosidad y paisaje.",
+      "en": "Nebula Villa rises from volcanic terrain as a constellation of volumes. The lighting integrates with architecture, producing gradients that mimic twilight. The result: a sculptural balance of luminosity and landscape."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Los Cabos, Mexico",
+        "año": "2024",
+        "área": "16,00 m²",
+        "tipo": "luxury mansion"
+      },
+      "en": {
+        "location": "Los Cabos, Mexico",
+        "year": "2024",
+        "area": "16,000 m²",
+        "type": "luxury mansion "
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      { "filename": "01.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "02.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "03.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "04.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "05.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "06.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "07.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "08.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "09.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "10.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "11.jpg", "caption": { "es": "", "en": "" } },
+      { "filename": "", "caption": { "es": "", "en": "" } }
+    ],
+    "videos": [{
+"position": 3,
+"youtube_url": "https://youtu.be/Q-8uwiITh2w",
+"caption": { "es": "Recorrido virtual", "en": "Virtual tour" }
+},
+{
+"position": 7,
+"youtube_url": "https://youtu.be/pdiE1cHDRJM",
+"caption": { "es": "Proceso de obra", "en": "Construction process" }
+}]
+  }
+}
