@@ -1,76 +1,30 @@
-﻿'use strict';
-(function (global) {
-  const qs=(s,c=document)=>c.querySelector(s); const qsa=(s,c=document)=>Array.from(c.querySelectorAll(s));
-  const createEl=(t,cls,attrs={})=>{const el=document.createElement(t); if(cls) el.className=cls; for(const[k,v]of Object.entries(attrs)){if(k==='text')el.textContent=v; else if(k==='html')el.innerHTML=v; else el.setAttribute(k,v)} return el;};
-  function buildProjectsFromDom(){
-    const items=qsa('.project-text'); if(items.length){ return items.map((el,i)=>({ name:(qs('.project-name',el)?.textContent||'').trim(), location:(qs('.project-location',el)?.textContent||'').trim(), image:(Array.isArray(global.PROJECTS)&&global.PROJECTS[i])?global.PROJECTS[i].image:null, url:null, index:i })); }
-    if(Array.isArray(global.PROJECTS)&&global.PROJECTS.length){ return global.PROJECTS.map((p,i)=>({name:p.name,location:p.location,image:p.image,url:null,index:i})); }
-    return [];
-  }
-  const LTSDModals={
-    _opts:null,_els:{},
-    init(opts={}){
-      const auto=buildProjectsFromDom();
-      const cfg=Object.assign({aboutTitle:'About LT Studio Design',aboutHtml:'<div class="ltsd-about"><p>Agregá tu contenido del About aquí.</p></div>',projects:auto,triggers:{all:'[data-ltsd="all"]',about:'[data-ltsd="about"]'},useGoToProjectHandler:typeof global.goToProject==='function'}, (global.LTSD_MODALS_CONFIG||{}), opts);
-      this._opts=cfg; this._createSkeleton(); this._attachTriggers(); this._ensureGlobalFallbacks();
-    },
-    _createSkeleton(){
-      if(!qs('#ltsd-all-modal')){
-        const modal=createEl('div','ltsd-modal',{id:'ltsd-all-modal',role:'dialog','aria-modal':'true'});
-        const panel=createEl('div','ltsd-modal__panel');
-        const header=createEl('div','ltsd-modal__header');
-        const title=createEl('div','ltsd-modal__title',{text:'All Projects'});
-        const close=createEl('button','ltsd-modal__close',{'aria-label':'Cerrar',text:'×'}); close.addEventListener('click',()=>this.close('all'));
-        header.append(title,close);
-        const grid=createEl('div','ltsd-projects',{id:'ltsd-projects-grid'});
-        panel.append(header,grid); modal.append(panel); document.body.appendChild(modal);
-        this._els.all={modal,panel,header,title,close,grid};
-      }
-      if(!qs('#ltsd-about-modal')){
-        const modal=createEl('div','ltsd-modal',{id:'ltsd-about-modal',role:'dialog','aria-modal':'true'});
-        const panel=createEl('div','ltsd-modal__panel');
-        const header=createEl('div','ltsd-modal__header');
-        const title=createEl('div','ltsd-modal__title',{text:this._opts?.aboutTitle||'About'});
-        const close=createEl('button','ltsd-modal__close',{'aria-label':'Cerrar',text:'×'}); close.addEventListener('click',()=>this.close('about'));
-        header.append(title,close);
-        const content=createEl('div','ltsd-about',{id:'ltsd-about-content'});
-        panel.append(header,content); modal.append(panel); document.body.appendChild(modal);
-        this._els.about={modal,panel,header,title,close,content};
-      }
-      document.addEventListener('keydown',(e)=>{ if(e.key==='Escape') this.close(); });
-      document.addEventListener('click',(e)=>{ ['#ltsd-all-modal','#ltsd-about-modal'].forEach(sel=>{const m=qs(sel); if(m&&m.classList.contains('ltsd-modal--visible')&&e.target===m) this.close();});});
-    },
-    _attachTriggers(){
-      qsa(this._opts.triggers.all).forEach(el=>el.addEventListener('click',(e)=>{e.preventDefault();this.openAll();}));
-      qsa(this._opts.triggers.about).forEach(el=>el.addEventListener('click',(e)=>{e.preventDefault();this.openAbout();}));
-      qsa('[onclick*="showAllProjects"]').forEach(el=>el.addEventListener('click',(e)=>{e.preventDefault();this.openAll();}));
-      qsa('[onclick*="showAbout"]').forEach(el=>el.addEventListener('click',(e)=>{e.preventDefault();this.openAbout();}));
-      qsa('a,button,div,span').forEach(el=>{ const t=(el.textContent||'').trim().toLowerCase(); if(t==='all'&&!el.hasAttribute('data-ltsd')) el.addEventListener('click',(e)=>{e.preventDefault();this.openAll();}); if(t==='about'&&!el.hasAttribute('data-ltsd')) el.addEventListener('click',(e)=>{e.preventDefault();this.openAbout();}); });
-    },
-    _ensureGlobalFallbacks(){
-      if(typeof global.showAllProjects!=='function') global.showAllProjects=()=>this.openAll();
-      if(typeof global.closeAllProjects!=='function') global.closeAllProjects=()=>this.close('all');
-      if(typeof global.showAbout!=='function') global.showAbout=()=>this.openAbout();
-      if(typeof global.closeAbout!=='function') global.closeAbout=()=>this.close('about');
-    },
-    openAll(){
-      const el=this._els.all||{modal:qs('#ltsd-all-modal'),grid:qs('#ltsd-projects-grid'),title:qs('#ltsd-all-modal .ltsd-modal__title')};
-      if(!el.modal||!el.grid) return; el.title.textContent='All Projects'; el.grid.innerHTML='';
-      const list=(Array.isArray(this._opts.projects)&&this._opts.projects.length)?this._opts.projects:buildProjectsFromDom();
-      list.forEach((p,i)=>{ const card=createEl('div','ltsd-card',{'data-index':String(i)}); const bg=p.image||(Array.isArray(global.PROJECTS)&&global.PROJECTS[i]?global.PROJECTS[i].image:null); if(bg) card.style.backgroundImage=`url("${bg}")`; const overlay=createEl('div','ltsd-card__overlay'); overlay.append(createEl('div','ltsd-card__title',{text:p.name||`Proyecto ${i+1}`}), createEl('div','ltsd-card__location',{text:p.location||''})); card.append(overlay); card.addEventListener('click',()=>{ if(this._opts.useGoToProjectHandler&&typeof global.goToProject==='function'&&Number.isInteger(p.index)) global.goToProject(p.index); else if(p.url) window.location.href=p.url;}); el.grid.append(card); });
-      el.modal.classList.add('ltsd-modal--visible');
-    },
-    openAbout(){
-      const el=this._els.about||{modal:qs('#ltsd-about-modal'),content:qs('#ltsd-about-content'),title:qs('#ltsd-about-modal .ltsd-modal__title')};
-      if(!el.modal||!el.content) return; el.title.textContent=this._opts.aboutTitle||'About'; el.content.innerHTML=this._opts.aboutHtml||'<div class="ltsd-about"><p>Agregá tu contenido del About aquí.</p></div>'; el.modal.classList.add('ltsd-modal--visible');
-    },
-    close(which){
-      const all=qs('#ltsd-all-modal'); const about=qs('#ltsd-about-modal');
-      if(!which||which==='all') all&&all.classList.remove('ltsd-modal--visible');
-      if(!which||which==='about') about&&about.classList.remove('ltsd-modal--visible');
-    }
+﻿(function (global) {
+  function qs(s,c){return (c||document).querySelector(s)} function qsa(s,c){return Array.prototype.slice.call((c||document).querySelectorAll(s))}
+  function el(t,c,a){var e=document.createElement(t); if(c)e.className=c; if(a){for(var k in a){if(k==='text')e.textContent=a[k]; else if(k==='html')e.innerHTML=a[k]; else e.setAttribute(k,a[k]);}} return e;}
+  function fromDom(){var items=qsa(".project-text"); if(items.length){return items.map(function(n,i){var nm=qs(".project-name",n),lc=qs(".project-location",n);var img=(global.PROJECTS&&global.PROJECTS[i])?global.PROJECTS[i].image:null; return {name:nm?nm.textContent.trim():"",location:lc?lc.textContent.trim():"",image:img,index:i};});}
+    if(Array.isArray(global.PROJECTS)) return global.PROJECTS.map(function(p,i){return {name:p.name,location:p.location,image:p.image,index:i};}); return [];}
+  var M={_o:null,_els:{},init:function(o){var auto=fromDom(); this._o=Object.assign({aboutTitle:"About LT Studio Design",aboutHtml:'<div class="ltsd-about"><p>Agregá tu contenido del About aquí.</p></div>',projects:auto,triggers:{all:'[data-ltsd="all"]',about:'[data-ltsd="about"]'},useGoToProjectHandler:typeof global.goToProject==='function'},(global.LTSD_MODALS_CONFIG||{}),o||{}); this._shell(); this._bind(); this._globals();},
+    _shell:function(){if(!qs('#ltsd-all-modal')){var m=el('div','ltsd-modal',{id:'ltsd-all-modal',role:'dialog','aria-modal':'true'}),p=el('div','ltsd-modal__panel'),h=el('div','ltsd-modal__header'),t=el('div','ltsd-modal__title',{text:'All Projects'}),x=el('button','ltsd-modal__close',{'aria-label':'Cerrar',text:'×'});x.onclick=this.close.bind(this,'all');h.appendChild(t);h.appendChild(x);var g=el('div','ltsd-projects',{id:'ltsd-projects-grid'});p.appendChild(h);p.appendChild(g);m.appendChild(p);document.body.appendChild(m);this._els.all={m:m,p:p,h:h,t:t,x:x,g:g};}
+      if(!qs('#ltsd-about-modal')){var m2=el('div','ltsd-modal',{id:'ltsd-about-modal',role:'dialog','aria-modal':'true'}),p2=el('div','ltsd-modal__panel'),h2=el('div','ltsd-modal__header'),t2=el('div','ltsd-modal__title',{text:(this._o.aboutTitle||'About')}),x2=el('button','ltsd-modal__close',{'aria-label':'Cerrar',text:'×'});x2.onclick=this.close.bind(this,'about');h2.appendChild(t2);h2.appendChild(x2);var c2=el('div','ltsd-about',{id:'ltsd-about-content'});p2.appendChild(h2);p2.appendChild(c2);m2.appendChild(p2);document.body.appendChild(m2);this._els.about={m:m2,p:p2,h:h2,t:t2,x:x2,c:c2};}
+      document.addEventListener('keydown',function(e){if(e.key==='Escape')M.close();}); ['#ltsd-all-modal','#ltsd-about-modal'].forEach(function(s){var mm=qs(s); if(mm) mm.addEventListener('click',function(e){if(e.target===mm) M.close();});});},
+    _bind:function(){qsa(this._o.triggers.all).forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();M.openAll();});});
+      qsa(this._o.triggers.about).forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();M.openAbout();});});
+      qsa('[onclick*="showAllProjects"]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();M.openAll();});});
+      qsa('[onclick*="showAbout"]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();M.openAbout();});});},
+    _globals:function(){if(typeof global.showAllProjects!=='function') global.showAllProjects=function(){M.openAll();};
+      if(typeof global.closeAllProjects!=='function') global.closeAllProjects=function(){M.close('all');};
+      if(typeof global.showAbout!=='function') global.showAbout=function(){M.openAbout();};
+      if(typeof global.closeAbout!=='function') global.closeAbout=function(){M.close('about');};},
+    openAll:function(){var E=this._els.all||{m:qs('#ltsd-all-modal'),g:qs('#ltsd-projects-grid'),t:qs('#ltsd-all-modal .ltsd-modal__title')}; if(!E.m||!E.g)return;
+      E.t.textContent='All Projects'; E.g.innerHTML=''; var list=(Array.isArray(this._o.projects)&&this._o.projects.length)?this._o.projects:fromDom();
+      list.forEach(function(p,i){var card=el('div','ltsd-card',{'data-index':String(i)}); var bg=p.image||(Array.isArray(global.PROJECTS)&&global.PROJECTS[i]?global.PROJECTS[i].image:null);
+        if(bg) card.style.backgroundImage='url("'+bg+'")'; var ov=el('div','ltsd-card__overlay'); ov.appendChild(el('div','ltsd-card__title',{text:(p.name||('Proyecto '+(i+1)))})); ov.appendChild(el('div','ltsd-card__location',{text:(p.location||'')})); card.appendChild(ov);
+        card.onclick=function(){ if(M._o.useGoToProjectHandler && typeof global.goToProject==='function' && typeof p.index==='number') global.goToProject(p.index); }; E.g.appendChild(card);});
+      E.m.classList.add('ltsd-modal--visible');},
+    openAbout:function(){var E=this._els.about||{m:qs('#ltsd-about-modal'),c:qs('#ltsd-about-content'),t:qs('#ltsd-about-modal .ltsd-modal__title')}; if(!E.m||!E.c)return;
+      E.t.textContent=this._o.aboutTitle||'About'; E.c.innerHTML=this._o.aboutHtml||'<div class="ltsd-about"><p>Agregá tu contenido del About aquí.</p></div>'; E.m.classList.add('ltsd-modal--visible');},
+    close:function(which){var A=qs('#ltsd-all-modal'),B=qs('#ltsd-about-modal'); if(!which||which==='all'){ if(A) A.classList.remove('ltsd-modal--visible'); } if(!which||which==='about'){ if(B) B.classList.remove('ltsd-modal--visible'); }}
   };
-  function ready(fn){ if(document.readyState!=='loading') fn(); else document.addEventListener('DOMContentLoaded',fn); }
-  ready(()=>{ try{ LTSDModals.init(); }catch(e){} });
-  global.LTSDModals=LTSDModals;
+  function ready(f){ if(document.readyState!=='loading') f(); else document.addEventListener('DOMContentLoaded',f); }
+  ready(function(){ try{ M.init(); }catch(e){} }); global.LTSDModals=M;
 })(window);
