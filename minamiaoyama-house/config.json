@@ -42,12 +42,12 @@
     ],
     "videos": [{
 "position": 3,
-"youtube_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+"youtube_url": "https://youtu.be/wLD6cJezjkY",
 "caption": { "es": "Recorrido virtual", "en": "Virtual tour" }
 },
 {
 "position": 7,
-"youtube_url": "https://youtu.be/9bZkp7q19f0",
+"youtube_url": "https://youtu.be/wLD6cJezjkY",
 "caption": { "es": "Proceso de obra", "en": "Construction process" }
 }]
   }
