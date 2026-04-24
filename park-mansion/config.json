@@ -98,14 +98,14 @@
         }
       },
       {
-        "filename": "11.jpg",
+        "filename": "10.jpg",
         "caption": {
           "es": "",
           "en": ""
         }
       },
       {
-        "filename": "12.jpg",
+        "filename": "09.jpg",
         "caption": {
           "es": "",
           "en": ""
@@ -115,7 +115,7 @@
     "videos": [
       {
         "position": 3,
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/cRU114BHqpU",
         "caption": {
           "es": "Recorrido virtual del desarrollo",
           "en": "Virtual tour of the development"
@@ -123,7 +123,7 @@
       },
       {
         "position": 7,
-        "youtube_url": "",
+        "youtube_url": "https://youtu.be/cRU114BHqpU",
         "caption": {
           "es": "Proceso de construcción",
           "en": "Construction process"
