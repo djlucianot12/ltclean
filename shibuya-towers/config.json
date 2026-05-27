@@ -1,23 +1,23 @@
 {
   "project": {
-    "name": "Axis Mansion",
+    "name": "Pampas Residence",
     "subtitle": {
-      "es": "La geometría iluminada por la intención.",
-      "en": "Geometry illuminated by intention."
+      "es": "Donde la calidez sudamericana se une a la pureza arquitectónica.",
+      "en": "GWhere South American warmth meets architectural purity."
     },
     "description": {
-      "es": "Axis Mansion define la precisión a través del ritmo. Cada luminaria se alinea con la lógica arquitectónica, realzando el flujo de planos verticales y horizontales. El concepto convierte el orden en belleza — la disciplina como forma de lujo.",
-      "en": "Axis Mansion defines precision through rhythm. Every luminaire aligns with architectural logic, enhancing the flow of vertical and horizontal planes. The concept turns order into beauty — discipline as luxury."
+      "es": "Ubicada en las llanuras serenas de Buenos Aires, Pampas Residence encarna la elegancia latinoamericana a través de la contención. Texturas naturales — piedra, madera, lino — dialogan con una iluminación lineal cálida que realza el volumen y la profundidad. El concepto equilibra apertura e intimidad, generando un diálogo entre la identidad material local y la sofisticación contemporánea.",
+      "en": "Set within the serene plains of Buenos Aires, Pampas Residence embodies Latin elegance through restraint. Natural textures — stone, timber, linen — interact with warm linear lighting that enhances volume and depth. The concept balances openness and intimacy, creating a dialogue between local material identity and contemporary sophistication."
     },
     "details": {
       "es": {
-        "ubicación": "Singapore",
+        "ubicación": "Buenos Aires, Argentina.",
         "año": "2024",
         "área": "3,500 m²",
         "tipo": "Complejo Lujoso"
       },
       "en": {
-        "location": "Singapore",
+        "location": "Buenos Aires, Argentina.",
         "year": "2024",
         "area": "3,500 m²",
         "type": "Luxury Complex"
@@ -115,7 +115,7 @@
     "videos": [
       {
         "position": 4,
-        "youtube_url": "https://youtu.be/CFasUWHc9ho",
+        "youtube_url": "https://youtu.be/vJcvs9fti_s",
         "caption": {
           "es": "Recorrido virtual de las torres",
           "en": "Virtual tour of the towers"
@@ -123,7 +123,7 @@
       },
       {
         "position": 8,
-        "youtube_url": "https://youtu.be/QkUgNbj04AY",
+        "youtube_url": "https://youtu.be/oVcWgMDAnkc",
         "caption": {
           "es": "Construcción en tiempo acelerado",
           "en": "Time-lapse construction"
