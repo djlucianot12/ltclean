@@ -1,0 +1,127 @@
+{
+  "project": {
+    "name": "Beakers Mansion",
+    "subtitle": {
+      "es": "Donde la arquitectura clásica encuentra la noche.",
+      "en": "Where classical architecture meets the night."
+    },
+    "description": {
+      "es": "Beakers Mansion reinterpreta el lenguaje neoclásico a través de la iluminación cinematográfica. Columnas de piedra caliza, jardines formales y una entrada monumental cobran vida al atardecer, cuando cada fuente de luz revela la escala real de la propiedad. El resultado es una experiencia visual que comunica el valor del proyecto antes de que exista.",
+      "en": "Beakers Mansion reimagines the neoclassical language through cinematic lighting. Limestone columns, formal gardens, and a monumental entrance come alive at dusk, when each light source reveals the true scale of the property. The result is a visual experience that communicates the value of the project before it exists."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Florida, USA",
+        "año": "2025",
+        "área": "3,200 m²",
+        "tipo": "Residencial Ultra Premium"
+      },
+      "en": {
+        "location": "Florida, USA",
+        "year": "2025",
+        "area": "3,200 m²",
+        "type": "Ultra Premium Residential"
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      {
+        "filename": "01.jpg",
+        "caption": {
+          "es": "Entrada principal al atardecer con Rolls-Royce Phantom",
+          "en": "Main entrance at golden hour with Rolls-Royce Phantom"
+        }
+      },
+      {
+        "filename": "02.jpg",
+        "caption": {
+          "es": "Fachada neoclásica iluminada al anochecer",
+          "en": "Neoclassical facade illuminated at dusk"
+        }
+      },
+      {
+        "filename": "03.jpg",
+        "caption": {
+          "es": "Jardines formales con senderos iluminados",
+          "en": "Formal gardens with illuminated pathways"
+        }
+      },
+      {
+        "filename": "04.jpg",
+        "caption": {
+          "es": "Vista aérea nocturna de la propiedad completa",
+          "en": "Aerial night view of the full estate"
+        }
+      },
+      {
+        "filename": "05.jpg",
+        "caption": {
+          "es": "Muelle privado con superyate",
+          "en": "Private dock with superyacht"
+        }
+      },
+      {
+        "filename": "06.jpg",
+        "caption": {
+          "es": "Arco de entrada con candelabro interior visible",
+          "en": "Entry arch with interior chandelier visible from outside"
+        }
+      },
+      {
+        "filename": "07.jpg",
+        "caption": {
+          "es": "Piscina infinita y cancha de tenis en vista aérea",
+          "en": "Infinity pool and tennis court in aerial view"
+        }
+      },
+      {
+        "filename": "08.jpg",
+        "caption": {
+          "es": "Detalle de iluminación de fachada en columnas",
+          "en": "Facade lighting detail on limestone columns"
+        }
+      },
+      {
+        "filename": "09.jpg",
+        "caption": {
+          "es": "Acceso vehicular con palmeras iluminadas",
+          "en": "Vehicle access with illuminated palm trees"
+        }
+      },
+      {
+        "filename": "10.jpg",
+        "caption": {
+          "es": "Vista nocturna completa desde la calle",
+          "en": "Full night view from the street"
+        }
+      },
+      {
+        "filename": "11.jpg",
+        "caption": {
+          "es": "Detalle de jardín con iluminación de camino al anochecer",
+          "en": "Garden detail with pathway lighting at dusk"
+        }
+      }
+    ],
+    "videos": [
+      {
+        "position": 3,
+        "youtube_url": "",
+        "caption": {
+          "es": "Recorrido cinematográfico al atardecer",
+          "en": "Cinematic walkthrough at golden hour"
+        }
+      },
+      {
+        "position": 8,
+        "youtube_url": "",
+        "caption": {
+          "es": "Vista aérea nocturna de la propiedad",
+          "en": "Aerial night view of the estate"
+        }
+      }
+    ]
+  }
+}
