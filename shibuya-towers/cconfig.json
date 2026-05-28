@@ -3,7 +3,7 @@
     "name": "Pampas Residence",
     "subtitle": {
       "es": "Donde la calidez sudamericana se une a la pureza arquitectónica.",
-      "en": "Where South American warmth meets architectural purity."
+      "en": "GWhere South American warmth meets architectural purity."
     },
     "description": {
       "es": "Ubicada en las llanuras serenas de Buenos Aires, Pampas Residence encarna la elegancia latinoamericana a través de la contención. Texturas naturales — piedra, madera, lino — dialogan con una iluminación lineal cálida que realza el volumen y la profundidad. El concepto equilibra apertura e intimidad, generando un diálogo entre la identidad material local y la sofisticación contemporánea.",
@@ -11,16 +11,16 @@
     },
     "details": {
       "es": {
-        "ubicación": "Buenos Aires, Argentina",
-        "año": "2025",
-        "área": "4,100 m²",
-        "tipo": "Residencial de Lujo"
+        "ubicación": "Buenos Aires, Argentina.",
+        "año": "2024",
+        "área": "3,500 m²",
+        "tipo": "Complejo Lujoso"
       },
       "en": {
-        "location": "Buenos Aires, Argentina",
-        "year": "2025",
-        "area": "4,100 m²",
-        "type": "Luxury Residential"
+        "location": "Buenos Aires, Argentina.",
+        "year": "2024",
+        "area": "3,500 m²",
+        "type": "Luxury Complex"
       }
     }
   },
@@ -29,55 +29,105 @@
     "images": [
       {
         "filename": "01.jpg",
-        "caption": { "es": "Calidez y materialidad natural.", "en": "Warmth and natural materiality." }
+        "caption": {
+          "es": "",
+          "en": "T"
+        }
       },
       {
         "filename": "02.jpg",
-        "caption": { "es": "Luz lineal sobre texturas.", "en": "Linear light across textures." }
+        "caption": {
+          "es": "",
+          "en": ""
+        }
       },
       {
         "filename": "03.jpg",
-        "caption": { "es": "Atmósfera de lujo contenido.", "en": "Atmosphere of restrained luxury." }
+        "caption": {
+          "es": "",
+          "en": ""
+        }
       },
       {
         "filename": "04.jpg",
-        "caption": { "es": "Volumen y profundidad iluminados.", "en": "Volume and depth illuminated." }
+        "caption": {
+          "es": "",
+          "en": ""
+        }
       },
       {
         "filename": "05.jpg",
-        "caption": { "es": "Detalle de luz y material.", "en": "Light and material detail." }
+        "caption": {
+          "es": "",
+          "en": ""
+        }
       },
       {
         "filename": "06.jpg",
-        "caption": { "es": "Apertura e intimidad.", "en": "Openness and intimacy." }
+        "caption": {
+          "es": "",
+          "en": ""
+        }
       },
       {
         "filename": "07.jpg",
-        "caption": { "es": "Iluminación cinematográfica interior.", "en": "Cinematic interior lighting." }
+        "caption": {
+          "es": "",
+          "en": ""
+        }
       },
       {
-        "filename": "08.jpg",
-        "caption": { "es": "Sofisticación contemporánea.", "en": "Contemporary sophistication." }
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
       },
       {
-        "filename": "09.jpg",
-        "caption": { "es": "Luz rasante sobre materiales nobles.", "en": "Grazing light across noble materials." }
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
       },
       {
-        "filename": "10.jpg",
-        "caption": { "es": "El proyecto antes de existir.", "en": "The project before it exists." }
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
       }
     ],
     "videos": [
       {
         "position": 4,
         "youtube_url": "https://youtu.be/vJcvs9fti_s",
-        "caption": { "es": "Recorrido de lujo interior.", "en": "Luxury interior walkthrough." }
+        "caption": {
+          "es": "Recorrido virtual de las torres",
+          "en": "Virtual tour of the towers"
+        }
       },
       {
         "position": 8,
         "youtube_url": "https://youtu.be/oVcWgMDAnkc",
-        "caption": { "es": "Atmósfera y materialidad.", "en": "Atmosphere and materiality." }
+        "caption": {
+          "es": "Construcción en tiempo acelerado",
+          "en": "Time-lapse construction"
+        }
       }
     ]
   }
