@@ -1,26 +1,26 @@
 {
   "project": {
-    "name": "Pampas Residence",
+    "name": "The Aether Residence",
     "subtitle": {
-      "es": "Donde la calidez sudamericana se une a la pureza arquitectónica.",
-      "en": "Where South American warmth meets architectural purity."
+      "es": "Donde la oscuridad se convierte en arquitectura.",
+      "en": "Where darkness becomes architecture."
     },
     "description": {
-      "es": "Ubicada en las llanuras serenas de Buenos Aires, Pampas Residence encarna la elegancia latinoamericana a través de la contención. Texturas naturales — piedra, madera, lino — dialogan con una iluminación lineal cálida que realza el volumen y la profundidad. El concepto equilibra apertura e intimidad, generando un diálogo entre la identidad material local y la sofisticación contemporánea.",
-      "en": "Set within the serene plains of Buenos Aires, Pampas Residence embodies Latin elegance through restraint. Natural textures — stone, timber, linen — interact with warm linear lighting that enhances volume and depth. The concept balances openness and intimacy, creating a dialogue between local material identity and contemporary sophistication."
+      "es": "The Aether Residence lleva el lenguaje del lujo nocturno a su expresión más radical. Piedra negra, mármol oscuro y acero mate forman una masa que absorbe la luz, mientras destellos de cyan y oro la devuelven con precisión quirúrgica. Una propiedad que no busca ser vista — busca ser sentida.",
+      "en": "The Aether Residence takes the language of nocturnal luxury to its most radical expression. Black stone, dark marble, and matte steel form a mass that absorbs light, while precise flashes of cyan and gold return it with surgical precision. A property that does not seek to be seen — it seeks to be felt."
     },
     "details": {
       "es": {
-        "ubicación": "Buenos Aires, Argentina",
+        "ubicación": "Florida, USA",
         "año": "2025",
-        "área": " 4,100 m²",
-        "tipo": "Residencial de Lujo"
+        "área": "3,500 m²",
+        "tipo": "Residencial Ultra Premium"
       },
       "en": {
-        "location": "Buenos Aires, Argentina",
+        "location": "Florida, USA",
         "year": "2025",
-        "area": "4,100 m²",
-        "type": "Luxury Residential"
+        "area": "3,500 m²",
+        "type": "Ultra Premium Residential"
       }
     }
   },
@@ -29,98 +29,63 @@
     "images": [
       {
         "filename": "01.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Oscuridad y precisión luminosa.", "en": "Darkness and luminous precision." }
       },
       {
         "filename": "02.jpg",
-        "caption": {
-          "es": "Lobby con mármol de Carrara",
-          "en": "Lobby with Carrara marble"
-        }
+        "caption": { "es": "Materia que absorbe la luz.", "en": "Matter that absorbs light." }
       },
       {
         "filename": "03.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Cyan como firma nocturna.", "en": "Cyan as a nocturnal signature." }
       },
       {
         "filename": "04.jpg",
-        "caption": {
-          "es": "reflejos nocturnos integrados al paisaje.",
-          "en": "night reflections merging with landscape."
-        }
+        "caption": { "es": "Detalle de luz y piedra negra.", "en": "Light and black stone detail." }
       },
       {
         "filename": "05.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Atmósfera radical al anochecer.", "en": "Radical atmosphere at nightfall." }
       },
       {
         "filename": "06.jpg",
-        "caption": {
-          "es": "Suite principal con vestidor",
-          "en": "Master suite with walk-in closet"
-        }
+        "caption": { "es": "Iluminación quirúrgica de precisión.", "en": "Surgical precision lighting." }
       },
       {
         "filename": "07.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Lujo que no se anuncia, se siente.", "en": "Luxury that is not announced — it is felt." }
       },
       {
         "filename": "08.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Contraste entre masa y luz.", "en": "Contrast between mass and light." }
       },
       {
         "filename": "09.jpg",
-        "caption": {
-          "es": "luz rasante sobre paneles de roble.",
-          "en": "soft grazing light across oak panels"
-        }
+        "caption": { "es": "Iluminación cinematográfica nocturna.", "en": "Cinematic night lighting." }
       },
       {
         "filename": "10.jpg",
-        "caption": {
-          "es": "reflejos cálidos sobre piedra natural.",
-          "en": "warm reflections on natural stone."
-        }
+        "caption": { "es": "Sombra y materia en equilibrio.", "en": "Shadow and matter in balance." }
       },
       {
         "filename": "11.jpg",
-        "caption": {
-          "es": "Vista aérea del distrito",
-          "en": "Aerial view of the district"
-        }
+        "caption": { "es": "Detalle cinematográfico.", "en": "Cinematic detail." }
+      },
+      {
+        "filename": "12.jpg",
+        "caption": { "es": "El proyecto antes de existir.", "en": "The project before it exists." }
       }
     ],
     "videos": [
       {
-        "position": 4,
-        "youtube_url": "https://youtu.be/vJcvs9fti_s",
-        "caption": {
-          "es": "Recorrido de lujo interior",
-          "en": "Luxury interior walkthrough"
-        }
+        "position": 5,
+        "youtube_url": "https://youtu.be/wLD6cJezjkY",
+        "caption": { "es": "Recorrido cinematográfico nocturno.", "en": "Cinematic night walkthrough." }
       },
       {
-        "position": 9,
-        "youtube_url": "https://youtu.be/oVcWgMDAnkc",
-        "caption": {
-          "es": "Proceso de construcción avanzada",
-          "en": "Advanced construction process"
-        }
+        "position": 10,
+        "youtube_url": "https://youtu.be/tULWZH12v40",
+        "caption": { "es": "Atmósfera y materialidad oscura.", "en": "Dark atmosphere and materiality." }
       }
     ]
   }
