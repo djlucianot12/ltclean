@@ -1,26 +1,26 @@
 {
   "project": {
-    "name": "Crestline Residence",
+    "name": "Noir Estate",
     "subtitle": {
-      "es": "La luz como paisaje.",
-      "en": "Light as landscape."
+      "es": "El arte de la oscuridad iluminado por el control.",
+      "en": "The art of darkness illuminated by control."
     },
     "description": {
-      "es": "Ubicada en las colinas de Los Ángeles, Crestline Residence explora la luz como una extensión del paisaje. Líneas de luminancia recorren el horizonte arquitectónico, fusionando la percepción interior y exterior. Cada reflejo se vuelve parte del terreno: vidrio, hormigón y cielo en un mismo flujo visual.",
-      "en": "Perched on the Los Angeles hills, Crestline Residence explores light as an extension of the surrounding landscape. Linear luminance traces the architectural horizon, blending interior and exterior perception. Every reflection becomes part of the terrain — glass, concrete and sky converging in a seamless visual continuum."
+      "es": "Noir Estate encarna la opulencia silenciosa. Tonos materiales profundos — roble ahumado, ónix y terciopelo — se revelan mediante gradientes de luz controlada. Cada luminaria es una pincelada que transforma las sombras en lujo. Una propiedad diseñada para quienes entienden que el verdadero lujo no se anuncia, se siente.",
+      "en": "Noir Estate embodies silent opulence. Deep material tones — smoked oak, onyx, and velvet — are revealed through controlled light gradients. Each luminaire becomes a brushstroke, transforming shadows into luxury. A property designed for those who understand that true luxury is not announced — it is felt."
     },
     "details": {
       "es": {
-        "ubicación": "Los Angeles, USA",
-        "año": "2024",
-        "área": "6,600 m²",
-        "tipo": "Mansion"
+        "ubicación": "Florida, USA",
+        "año": "2025",
+        "área": "3,800 m²",
+        "tipo": "Residencial Ultra Premium"
       },
       "en": {
-        "location": "Los Angeles, USA",
-        "year": "2024",
-        "area": "6,600 m²",
-        "type": "Mansion"
+        "location": "Florida, USA",
+        "year": "2025",
+        "area": "3,800 m²",
+        "type": "Ultra Premium Residential"
       }
     }
   },
@@ -29,105 +29,55 @@
     "images": [
       {
         "filename": "01.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Oscuridad como lenguaje de diseño.", "en": "Darkness as a design language." }
       },
       {
         "filename": "02.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Gradientes de luz controlada.", "en": "Controlled light gradients." }
       },
       {
         "filename": "03.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Opulencia silenciosa al anochecer.", "en": "Silent opulence at nightfall." }
       },
       {
         "filename": "04.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Sombra y materia en equilibrio.", "en": "Shadow and matter in balance." }
       },
       {
         "filename": "05.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Detalle de luz y material profundo.", "en": "Deep material and light detail." }
       },
       {
         "filename": "06.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Lujo que no se anuncia, se siente.", "en": "Luxury that is not announced — it is felt." }
       },
       {
         "filename": "07.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Iluminación cinematográfica nocturna.", "en": "Cinematic night lighting." }
       },
       {
         "filename": "08.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Atmósfera de contraste y precisión.", "en": "Atmosphere of contrast and precision." }
       },
       {
         "filename": "09.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "Cada luminaria, una pincelada.", "en": "Each luminaire, a brushstroke." }
       },
       {
         "filename": "10.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
-      },
-      {
-        "filename": "11.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
-      },
-      {
-        "filename": "12.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
+        "caption": { "es": "El proyecto antes de existir.", "en": "The project before it exists." }
       }
     ],
     "videos": [
       {
-        "position": 6,
-        "youtube_url": "",
-        "caption": {
-          "es": "Creatividad sin límites",
-          "en": "Creativity without limits"
-        }
+        "position": 4,
+        "youtube_url": "https://youtu.be/cox327HGn-Y",
+        "caption": { "es": "Recorrido cinematográfico nocturno.", "en": "Cinematic night walkthrough." }
       },
       {
-        "position": 10,
-        "youtube_url": "",
-        "caption": {
-          "es": "Espacios que inspiran",
-          "en": "Spaces that inspire"
-        }
+        "position": 8,
+        "youtube_url": "https://youtu.be/KdqguAWmZ98",
+        "caption": { "es": "Atmósfera y materialidad oscura.", "en": "Dark atmosphere and materiality." }
       }
     ]
   }
