@@ -1,0 +1,141 @@
+{
+  "project": {
+    "name": "Star Island",
+    "subtitle": {
+      "es": "Precisión contemporánea frente a la bahía.",
+      "en": "Contemporary precision facing the bay."
+    },
+    "description": {
+      "es": "Star Island define el lenguaje de la arquitectura contemporánea de lujo en el sur de Florida. Paneles de piedra texturada, volúmenes de vidrio y una geometría de jardines formales se articulan mediante iluminación de precisión. El skyline como telón de fondo permanente. El resultado es un proyecto que comunica exclusividad antes de que exista.",
+      "en": "Star Island defines the language of contemporary luxury architecture in South Florida. Textured stone panels, glass volumes, and a formal garden geometry are articulated through precision lighting. The skyline as a permanent backdrop. The result is a project that communicates exclusivity before it exists."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Florida, USA",
+        "año": "2025",
+        "área": "2,800 m²",
+        "tipo": "Residencial Ultra Premium"
+      },
+      "en": {
+        "location": "Florida, USA",
+        "year": "2025",
+        "area": "2,800 m²",
+        "type": "Ultra Premium Residential"
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      {
+        "filename": "01.jpg",
+        "caption": {
+          "es": "Acceso principal con Aston Martin Vantage y Ferrari clásico",
+          "en": "Main entrance with Aston Martin Vantage and classic Ferrari"
+        }
+      },
+      {
+        "filename": "02.jpg",
+        "caption": {
+          "es": "Fachada contemporánea en piedra y vidrio al anochecer",
+          "en": "Contemporary stone and glass facade at dusk"
+        }
+      },
+      {
+        "filename": "03.jpg",
+        "caption": {
+          "es": "Jardines geométricos iluminados desde el nivel de calle",
+          "en": "Geometric gardens illuminated from street level"
+        }
+      },
+      {
+        "filename": "04.jpg",
+        "caption": {
+          "es": "Vista aérea nocturna con skyline de fondo",
+          "en": "Aerial night view with city skyline backdrop"
+        }
+      },
+      {
+        "filename": "05.jpg",
+        "caption": {
+          "es": "Terraza superior con vista a la bahía",
+          "en": "Upper terrace with bay view"
+        }
+      },
+      {
+        "filename": "06.jpg",
+        "caption": {
+          "es": "Detalle de balcón con pareja y vista nocturna",
+          "en": "Balcony detail with couple and night view"
+        }
+      },
+      {
+        "filename": "07.jpg",
+        "caption": {
+          "es": "Piscina y jardín posterior al anochecer",
+          "en": "Pool and rear garden at nightfall"
+        }
+      },
+      {
+        "filename": "08.jpg",
+        "caption": {
+          "es": "Vista desde la calle con Lamborghini en primer plano",
+          "en": "Street view with Lamborghini in foreground"
+        }
+      },
+      {
+        "filename": "09.jpg",
+        "caption": {
+          "es": "Detalle de materiales: piedra texturada y carpintería de vidrio",
+          "en": "Material detail: textured stone and glass joinery"
+        }
+      },
+      {
+        "filename": "10.jpg",
+        "caption": {
+          "es": "Garage con colección de autos de lujo",
+          "en": "Garage with luxury car collection"
+        }
+      },
+      {
+        "filename": "11.jpg",
+        "caption": {
+          "es": "Planta baja con gimnasio y zona de recreación iluminada",
+          "en": "Ground floor with gym and illuminated recreation area"
+        }
+      },
+      {
+        "filename": "12.jpg",
+        "caption": {
+          "es": "Acceso peatonal con iluminación lateral de precisión",
+          "en": "Pedestrian access with precision side lighting"
+        }
+      },
+      {
+        "filename": "13.jpg",
+        "caption": {
+          "es": "Vista nocturna completa con reflejo en la bahía",
+          "en": "Full night view with bay reflection"
+        }
+      }
+    ],
+    "videos": [
+      {
+        "position": 4,
+        "youtube_url": "https://youtu.be/feEJo47Jl2I",
+        "caption": {
+          "es": "Recorrido cinematográfico nocturno",
+          "en": "Cinematic night walkthrough"
+        }
+      },
+      {
+        "position": 7,
+        "youtube_url": "https://youtu.be/M0Tt9Vg_pj8",
+        "caption": {
+          "es": "Vista aérea con skyline",
+          "en": "Aerial view with city skyline"
+        }
+      }
+    ]
+  }
+}

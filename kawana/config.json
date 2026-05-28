@@ -29,112 +29,67 @@
     "images": [
       {
         "filename": "01.jpg",
-        "caption": {
-          "es": "Acceso principal con Aston Martin Vantage y Ferrari clásico",
-          "en": "Main entrance with Aston Martin Vantage and classic Ferrari"
-        }
+        "caption": { "es": "Precisión contemporánea al anochecer.", "en": "Contemporary precision at nightfall." }
       },
       {
         "filename": "02.jpg",
-        "caption": {
-          "es": "Fachada contemporánea en piedra y vidrio al anochecer",
-          "en": "Contemporary stone and glass facade at dusk"
-        }
+        "caption": { "es": "Luz y geometría.", "en": "Light and geometry." }
       },
       {
         "filename": "03.jpg",
-        "caption": {
-          "es": "Jardines geométricos iluminados desde el nivel de calle",
-          "en": "Geometric gardens illuminated from street level"
-        }
+        "caption": { "es": "Atmósfera nocturna de lujo.", "en": "Nocturnal luxury atmosphere." }
       },
       {
         "filename": "04.jpg",
-        "caption": {
-          "es": "Vista aérea nocturna con skyline de fondo",
-          "en": "Aerial night view with city skyline backdrop"
-        }
+        "caption": { "es": "Escala urbana y precisión.", "en": "Urban scale and precision." }
       },
       {
         "filename": "05.jpg",
-        "caption": {
-          "es": "Terraza superior con vista a la bahía",
-          "en": "Upper terrace with bay view"
-        }
+        "caption": { "es": "Detalle de luz y material.", "en": "Light and material detail." }
       },
       {
         "filename": "06.jpg",
-        "caption": {
-          "es": "Detalle de balcón con pareja y vista nocturna",
-          "en": "Balcony detail with couple and night view"
-        }
+        "caption": { "es": "Exclusividad antes de existir.", "en": "Exclusivity before it exists." }
       },
       {
         "filename": "07.jpg",
-        "caption": {
-          "es": "Piscina y jardín posterior al anochecer",
-          "en": "Pool and rear garden at nightfall"
-        }
+        "caption": { "es": "Iluminación cinematográfica nocturna.", "en": "Cinematic night lighting." }
       },
       {
         "filename": "08.jpg",
-        "caption": {
-          "es": "Vista desde la calle con Lamborghini en primer plano",
-          "en": "Street view with Lamborghini in foreground"
-        }
+        "caption": { "es": "La ciudad como telón de fondo.", "en": "The city as backdrop." }
       },
       {
         "filename": "09.jpg",
-        "caption": {
-          "es": "Detalle de materiales: piedra texturada y carpintería de vidrio",
-          "en": "Material detail: textured stone and glass joinery"
-        }
+        "caption": { "es": "Piedra, vidrio y luz de precisión.", "en": "Stone, glass and precision light." }
       },
       {
         "filename": "10.jpg",
-        "caption": {
-          "es": "Garage con colección de autos de lujo",
-          "en": "Garage with luxury car collection"
-        }
+        "caption": { "es": "Lujo silencioso al anochecer.", "en": "Silent luxury at nightfall." }
       },
       {
         "filename": "11.jpg",
-        "caption": {
-          "es": "Planta baja con gimnasio y zona de recreación iluminada",
-          "en": "Ground floor with gym and illuminated recreation area"
-        }
+        "caption": { "es": "Atmósfera y escala contemporánea.", "en": "Contemporary atmosphere and scale." }
       },
       {
         "filename": "12.jpg",
-        "caption": {
-          "es": "Acceso peatonal con iluminación lateral de precisión",
-          "en": "Pedestrian access with precision side lighting"
-        }
+        "caption": { "es": "Detalle cinematográfico.", "en": "Cinematic detail." }
       },
       {
         "filename": "13.jpg",
-        "caption": {
-          "es": "Vista nocturna completa con reflejo en la bahía",
-          "en": "Full night view with bay reflection"
-        }
+        "caption": { "es": "El proyecto antes de existir.", "en": "The project before it exists." }
       }
     ],
     "videos": [
       {
-        "position": 4,
-        "youtube_url": "https://youtu.be/feEJo47Jl2I",
-        "caption": {
-          "es": "Recorrido cinematográfico nocturno",
-          "en": "Cinematic night walkthrough"
-        }
+        "position": 5,
+        "youtube_url": "",
+        "caption": { "es": "Recorrido cinematográfico nocturno.", "en": "Cinematic night walkthrough." }
       },
       {
-        "position": 7,
-        "youtube_url": "https://youtu.be/M0Tt9Vg_pj8",
-        "caption": {
-          "es": "Vista aérea con skyline",
-          "en": "Aerial view with city skyline"
-        }
+        "position": 10,
+        "youtube_url": "",
+        "caption": { "es": "Vista aérea con skyline.", "en": "Aerial view with city skyline." }
       }
     ]
   }
