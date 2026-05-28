@@ -1,0 +1,134 @@
+{
+  "project": {
+    "name": "The Aether Residence",
+    "subtitle": {
+      "es": "Luz suspendida entre el cielo y el mar.",
+      "en": "Light suspended between sky and sea."
+    },
+    "description": {
+      "es": "Aether Residence surge como una escultura costera — hormigón, agua y vidrio en quietud absoluta. El diseño lumínico revela las líneas del horizonte y las profundidades del reflejo; canales indirectos suavizan los bordes mientras haces rasantes acentúan las texturas de la piedra. Cada detalle lumínico disuelve el límite entre arquitectura y atmósfera.",
+      "en": "Aether Residence emerges as a coastal sculpture — concrete, water and glass in perfect stillness. The lighting design reveals horizon lines and reflective depths; indirect channels soften edges while grazing beams accentuate textures of stone. Every illumination detail blurs the boundary between architecture and atmosphere."
+    },
+    "details": {
+      "es": {
+        "ubicación": "Malibu, USA",
+        "año": "2024",
+        "área": "4,200 m²",
+        "tipo": "Residencial"
+      },
+      "en": {
+        "location": "Malibu, USA",
+        "year": "2024",
+        "area": "4,200 m²",
+        "type": "Residential"
+      }
+    }
+  },
+  "media": {
+    "main_image": "main.jpg",
+    "images": [
+      {
+        "filename": "01.jpg",
+        "caption": {
+          "es": "Fachada exterior que abraza la luz natural",
+          "en": "Exterior facade embracing natural light"
+        }
+      },
+      {
+        "filename": "02.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "03.jpg",
+        "caption": {
+          "es": "Área de estar abierta con vistas panorámicas",
+          "en": "Open living area with panoramic views"
+        }
+      },
+      {
+        "filename": "04.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "05.jpg",
+        "caption": {
+          "es": "Integración con el entorno natural",
+          "en": "Integration with natural environment"
+        }
+      },
+      {
+        "filename": "06.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "07.jpg",
+        "caption": {
+          "es": "Terraza elevada con vista al paisaje",
+          "en": "Elevated terrace overlooking landscape"
+        }
+      },
+      {
+        "filename": "08.jpg",
+        "caption": {
+          "es": "Diseño de cocina minimalista",
+          "en": "Minimalist kitchen design"
+        }
+      },
+      {
+        "filename": "09.jpg",
+        "caption": {
+          "es": "Detalle arquitectónico y texturas",
+          "en": "Architectural detail and textures"
+        }
+      },
+      {
+        "filename": "10.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "11.jpg",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "filename": "12.jpg",
+        "caption": {
+          "es": "Armonía perfecta con el entorno natural",
+          "en": "Perfect harmony with natural environment"
+        }
+      }
+    ],
+    "videos": [
+      {
+        "position": 4,
+        "youtube_url": "https://youtu.be/tULWZH12v40",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      },
+      {
+        "position": 8,
+        "youtube_url": "https://youtu.be/wLD6cJezjkY",
+        "caption": {
+          "es": "",
+          "en": ""
+        }
+      }
+    ]
+  }
+}

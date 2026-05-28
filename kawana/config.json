@@ -1,26 +1,26 @@
 {
   "project": {
-    "name": "The Aether Residence",
+    "name": "Star Island",
     "subtitle": {
-      "es": "Luz suspendida entre el cielo y el mar.",
-      "en": "Light suspended between sky and sea."
+      "es": "Precisión contemporánea frente a la bahía.",
+      "en": "Contemporary precision facing the bay."
     },
     "description": {
-      "es": "Aether Residence surge como una escultura costera — hormigón, agua y vidrio en quietud absoluta. El diseño lumínico revela las líneas del horizonte y las profundidades del reflejo; canales indirectos suavizan los bordes mientras haces rasantes acentúan las texturas de la piedra. Cada detalle lumínico disuelve el límite entre arquitectura y atmósfera.",
-      "en": "Aether Residence emerges as a coastal sculpture — concrete, water and glass in perfect stillness. The lighting design reveals horizon lines and reflective depths; indirect channels soften edges while grazing beams accentuate textures of stone. Every illumination detail blurs the boundary between architecture and atmosphere."
+      "es": "Star Island define el lenguaje de la arquitectura contemporánea de lujo en el sur de Florida. Paneles de piedra texturada, volúmenes de vidrio y una geometría de jardines formales se articulan mediante iluminación de precisión. El skyline como telón de fondo permanente. El resultado es un proyecto que comunica exclusividad antes de que exista.",
+      "en": "Star Island defines the language of contemporary luxury architecture in South Florida. Textured stone panels, glass volumes, and a formal garden geometry are articulated through precision lighting. The skyline as a permanent backdrop. The result is a project that communicates exclusivity before it exists."
     },
     "details": {
       "es": {
-        "ubicación": "Malibu, USA",
-        "año": "2024",
-        "área": "4,200 m²",
-        "tipo": "Residencial"
+        "ubicación": "Florida, USA",
+        "año": "2025",
+        "área": "2,800 m²",
+        "tipo": "Residencial Ultra Premium"
       },
       "en": {
-        "location": "Malibu, USA",
-        "year": "2024",
-        "area": "4,200 m²",
-        "type": "Residential"
+        "location": "Florida, USA",
+        "year": "2025",
+        "area": "2,800 m²",
+        "type": "Ultra Premium Residential"
       }
     }
   },
@@ -30,103 +30,89 @@
       {
         "filename": "01.jpg",
         "caption": {
-          "es": "Fachada exterior que abraza la luz natural",
-          "en": "Exterior facade embracing natural light"
+          "es": "Acceso principal con Aston Martin Vantage y Ferrari clásico",
+          "en": "Main entrance with Aston Martin Vantage and classic Ferrari"
         }
       },
       {
         "filename": "02.jpg",
         "caption": {
-          "es": "",
-          "en": ""
+          "es": "Vista aérea nocturna con skyline de fondo",
+          "en": "Aerial night view with city skyline backdrop"
         }
       },
       {
         "filename": "03.jpg",
         "caption": {
-          "es": "Área de estar abierta con vistas panorámicas",
-          "en": "Open living area with panoramic views"
+          "es": "Fachada contemporánea en piedra y vidrio al anochecer",
+          "en": "Contemporary stone and glass facade at dusk"
         }
       },
       {
         "filename": "04.jpg",
         "caption": {
-          "es": "",
-          "en": ""
+          "es": "Terraza superior con vista a la bahía",
+          "en": "Upper terrace with bay view"
         }
       },
       {
         "filename": "05.jpg",
         "caption": {
-          "es": "Integración con el entorno natural",
-          "en": "Integration with natural environment"
+          "es": "Jardines geométricos iluminados desde el nivel de calle",
+          "en": "Geometric gardens illuminated from street level"
         }
       },
       {
         "filename": "06.jpg",
         "caption": {
-          "es": "",
-          "en": ""
+          "es": "Detalle de balcón con pareja y vista nocturna",
+          "en": "Balcony detail with couple and night view"
         }
       },
       {
         "filename": "07.jpg",
         "caption": {
-          "es": "Terraza elevada con vista al paisaje",
-          "en": "Elevated terrace overlooking landscape"
+          "es": "Piscina y jardín posterior al anochecer",
+          "en": "Pool and rear garden at nightfall"
         }
       },
       {
         "filename": "08.jpg",
         "caption": {
-          "es": "Diseño de cocina minimalista",
-          "en": "Minimalist kitchen design"
+          "es": "Vista desde la calle con Lamborghini en primer plano",
+          "en": "Street view with Lamborghini in foreground"
         }
       },
       {
         "filename": "09.jpg",
         "caption": {
-          "es": "Detalle arquitectónico y texturas",
-          "en": "Architectural detail and textures"
+          "es": "Detalle de materiales: piedra texturada y carpintería de vidrio",
+          "en": "Material detail: textured stone and glass joinery"
         }
       },
       {
         "filename": "10.jpg",
         "caption": {
-          "es": "",
-          "en": ""
-        }
-      },
-      {
-        "filename": "11.jpg",
-        "caption": {
-          "es": "",
-          "en": ""
-        }
-      },
-      {
-        "filename": "12.jpg",
-        "caption": {
-          "es": "Armonía perfecta con el entorno natural",
-          "en": "Perfect harmony with natural environment"
+          "es": "Garage con colección de autos de lujo",
+          "en": "Garage with luxury car collection"
         }
       }
     ],
     "videos": [
       {
-        "position": 4,
-        "youtube_url": "https://youtu.be/tULWZH12v40",
+        "position": 3,
+        "youtube_url": "",
         "caption": {
-          "es": "",
-          "en": ""
+          "es": "Recorrido cinematográfico nocturno",
+          "en": "Cinematic night walkthrough"
         }
       },
       {
         "position": 8,
-        "youtube_url": "https://youtu.be/wLD6cJezjkY",
+        "youtube_url": "",
         "caption": {
-          "es": "",
-          "en": ""
+          "es": "Vista aérea con skyline",
+          "en": "Aerial view with city skyline"
         }
       }
     ]
