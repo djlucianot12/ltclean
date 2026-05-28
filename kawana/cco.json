@@ -37,29 +37,29 @@
       {
         "filename": "02.jpg",
         "caption": {
-          "es": "Fachada contemporánea en piedra y vidrio al anochecer",
-          "en": "Contemporary stone and glass facade at dusk"
-        }
-      },
-      {
-        "filename": "03.jpg",
-        "caption": {
-          "es": "Jardines geométricos iluminados desde el nivel de calle",
-          "en": "Geometric gardens illuminated from street level"
-        }
-      },
-      {
-        "filename": "04.jpg",
-        "caption": {
           "es": "Vista aérea nocturna con skyline de fondo",
           "en": "Aerial night view with city skyline backdrop"
         }
       },
       {
-        "filename": "05.jpg",
+        "filename": "03.jpg",
+        "caption": {
+          "es": "Fachada contemporánea en piedra y vidrio al anochecer",
+          "en": "Contemporary stone and glass facade at dusk"
+        }
+      },
+      {
+        "filename": "04.jpg",
         "caption": {
           "es": "Terraza superior con vista a la bahía",
           "en": "Upper terrace with bay view"
+        }
+      },
+      {
+        "filename": "05.jpg",
+        "caption": {
+          "es": "Jardines geométricos iluminados desde el nivel de calle",
+          "en": "Geometric gardens illuminated from street level"
         }
       },
       {
@@ -96,32 +96,11 @@
           "es": "Garage con colección de autos de lujo",
           "en": "Garage with luxury car collection"
         }
-      },
-      {
-        "filename": "11.jpg",
-        "caption": {
-          "es": "Planta baja con gimnasio y zona de recreación iluminada",
-          "en": "Ground floor with gym and illuminated recreation area"
-        }
-      },
-      {
-        "filename": "12.jpg",
-        "caption": {
-          "es": "Acceso peatonal con iluminación lateral de precisión",
-          "en": "Pedestrian access with precision side lighting"
-        }
-      },
-      {
-        "filename": "13.jpg",
-        "caption": {
-          "es": "Vista nocturna completa con reflejo en la bahía",
-          "en": "Full night view with bay reflection"
-        }
       }
     ],
     "videos": [
       {
-        "position": 4,
+        "position": 3,
         "youtube_url": "https://youtu.be/feEJo47Jl2I",
         "caption": {
           "es": "Recorrido cinematográfico nocturno",
@@ -129,7 +108,7 @@
         }
       },
       {
-        "position": 7,
+        "position": 8,
         "youtube_url": "https://youtu.be/M0Tt9Vg_pj8",
         "caption": {
           "es": "Vista aérea con skyline",
