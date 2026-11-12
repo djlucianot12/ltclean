@@ -3,6 +3,40 @@
 /* Solo hay inglés: se oculta el selector de idioma del menú */
 .p-header__languageList { display: none !important; }
 
+/* Accesibilidad: título y lista de proyectos invisibles, la lista aparece al navegar con Tab */
+.ltsd-sr-only {
+    position: absolute;
+    width: 1px; height: 1px;
+    margin: -1px; padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.ltsd-skipnav {
+    position: fixed;
+    top: 0; left: 0;
+    z-index: 9500;
+    max-height: 100vh;
+    overflow-y: auto;
+    padding: 20px 24px;
+    background: #252525;
+    transform: translateY(-120%);
+}
+.ltsd-skipnav:focus-within { transform: none; }
+.ltsd-skipnav ul { margin: 0; padding: 0; list-style: none; }
+.ltsd-skipnav a {
+    display: block;
+    padding: 6px 0;
+    color: #fff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.ltsd-skipnav a:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+
 .ltsd-about-overlay {
     position: fixed;
     top: 0; right: 0; bottom: 0; left: 0;
