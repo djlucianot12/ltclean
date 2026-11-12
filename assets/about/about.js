@@ -23,9 +23,9 @@
 
             '<h3>Contact</h3>' +
             '<ul>' +
-                '<li><span>Projects</span><a href="mailto:info@ltstudiodesign.com">info@ltstudiodesign.com</a></li>' +
-                '<li><span>Collaborations</span><a href="mailto:jobs@ltstudiodesign.com">jobs@ltstudiodesign.com</a></li>' +
-                '<li><span>Instagram</span><a href="https://www.instagram.com/ltstudiodesign/" target="_blank" rel="noopener">@ltstudiodesign</a></li>' +
+                '<li><span>Email</span><a href="mailto:ltstudiodesignbue@gmail.com">ltstudiodesignbue@gmail.com</a></li>' +
+                '<li><span>Instagram</span><a href="https://www.instagram.com/ltstudiodesignbue/" target="_blank" rel="noopener">@ltstudiodesignbue</a></li>' +
+                '<li><span>LinkedIn</span><a href="https://www.linkedin.com/in/lucianotroviano/" target="_blank" rel="noopener">Luciano Troviano</a></li>' +
                 '<li><span>Based in</span>Buenos Aires, Argentina</li>' +
             '</ul>' +
         '</div>';
