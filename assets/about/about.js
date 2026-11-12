@@ -7,7 +7,7 @@
         '<div class="ltsd-about">' +
             '<h2 id="ltsd-about-title">About</h2>' +
             '<p>LT Studio Design is an architectural lighting and visualization studio based in Buenos Aires, Argentina. ' +
-            'We create bespoke illumination concepts and hyper-realistic imagery for high-end residences, hotels and urban towers around the world.</p>' +
+            'We create bespoke illumination concepts and hyper-realistic imagery for high-end residences, hospitality, clinics and hospitals, and urban towers around the world.</p>' +
             '<p>Light is how we define architecture. Our work is nocturnal, cinematic and deliberately dramatic &mdash; ' +
             'every project is lit, composed and rendered in-house, from the first concept image to the final walkthrough film.</p>' +
             '<p>Founded by Luciano Troviano, the studio works directly with architects, developers and private clients ' +
