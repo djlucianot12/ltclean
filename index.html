@@ -1,15 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en" class="no-js">
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135279002-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-135279002-1');
-    </script>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta http-equiv="imagetoolbar" content="no">
@@ -19,9 +10,23 @@
     <title>LT STUDIO DESIGN</title>
     <meta name="author" content="LT STUDIO DESIGN">
     <meta name="copyright" content="LT STUDIO DESIGN">
-    <meta name="description" content="Luxury architectural lighting and visualization studio creating bespoke illumination and hyper-realistic imagery for high-end residences worldwide � where light defines architecture.">
-    <meta name="keywords" content="LT STUDIO DESIGN,今井敦,Atsushi Imai,建築,プロデュース">
+    <meta name="description" content="Luxury architectural lighting and visualization studio creating bespoke illumination and hyper-realistic imagery for high-end residences worldwide — where light defines architecture.">
+    <meta name="keywords" content="LT STUDIO DESIGN,architectural lighting,lighting design,architectural visualization,3D rendering,luxury residences">
     
+    <link rel="canonical" href="https://www.ltstudiodesign.com/">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "LT STUDIO DESIGN",
+      "url": "https://www.ltstudiodesign.com/",
+      "description": "Luxury architectural lighting and visualization studio creating bespoke illumination and hyper-realistic imagery for high-end residences worldwide.",
+      "image": "https://www.ltstudiodesign.com/park-mansion/images/main.jpg",
+      "email": "info@ltstudiodesign.com",
+      "knowsAbout": ["Architectural lighting design", "Architectural visualization", "3D rendering"]
+    }
+    </script>
+
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMjUyNTI1Ii8+Cjx0ZXh0IHg9IjE2IiB5PSIyMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZmZmZiIgZm9udC1zaXplPSIxNCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXdlaWdodD0iYm9sZCI+TFQ8L3RleHQ+Cjwvc3ZnPgo=">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
@@ -33,12 +38,12 @@
     <!-- Open Graph -->
     <meta property="og:title" content="LT STUDIO DESIGN">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://via.placeholder.com/1200x630.png">
+    <meta property="og:image" content="https://www.ltstudiodesign.com/park-mansion/images/main.jpg">
     <meta property="og:description" content="We will continue to provide architectural spaces that embody beauty and pleasure in serene settings, touching the sentiments of those who use them.">
-    <meta name="twitter:card" content="summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LT STUDIO DESIGN">
     <meta name="twitter:description" content="We will continue to provide architectural spaces that embody beauty and pleasure in serene settings, touching the sentiments of those who use them.">
-    <meta name="twitter:image" content="https://via.placeholder.com/1200x630.png">
+    <meta name="twitter:image" content="https://www.ltstudiodesign.com/park-mansion/images/main.jpg">
     
     <!-- Original CSS -->
     <link rel="stylesheet" href="assets/css/bundle.css">
@@ -181,7 +186,7 @@
             letter-spacing: 1px !important;
         }
     </style>
-  <link rel="stylesheet" href="assets/ltsd-modals/ltsd-modals.css">
+  <link rel="stylesheet" href="assets/about/about.css">
 </head>
 <body class="is-ready intro-active">
 
@@ -561,12 +566,12 @@
                                     body.classList.add('intro-complete');
 
                                     console.log('✅ Página original visible con todas sus animaciones');
-                                }, 1500);
-                            }, 4000);
+                                }, 700);
+                            }, 1500);
 
-                        }, 2000);
+                        }, 600);
                     }
-                }, index * 150);
+                }, index * 70);
             });
         }
 
@@ -583,10 +588,10 @@
                 // Crear partículas
                 createParticles();
 
-                // Iniciar animación después de 1 segundo
+                // Iniciar animación enseguida
                 setTimeout(() => {
                     animateIntroText();
-                }, 1000);
+                }, 300);
             }
         }
 
@@ -870,10 +875,9 @@
             );
         }
 
-        // Load main images after intro completes
-        setTimeout(() => {
-            loadProjectMainImages();
-        }, 2000);
+        // (Desactivado por rendimiento: las imágenes del carrusel ya vienen en el HTML
+        //  y todas las config.json usan main.jpg. Antes esto las descargaba 2-3 veces más.)
+        // setTimeout(() => { loadProjectMainImages(); }, 2000);
     </script>
 
     <!-- SCRIPT PARA SINCRONIZAR IMÁGENES Y AJUSTAR TIMING -->
@@ -905,32 +909,11 @@
             }, 500);
         });
 
-        // Override project duration to fix timing issue
-        setTimeout(function() {
-            // Extend project display duration
-            if (window.TweenMax && window.TimelineMax) {
-                // Slow down any auto-progression
-                const originalTimeScale = 1;
-                const newTimeScale = 0.3; // Slower = longer display time
-
-                // Override timeline speeds if they exist
-                document.addEventListener('click', function(e) {
-                    if (e.target.closest('.js-canvas__target')) {
-                        // Give more time between project transitions
-                        setTimeout(() => {
-                            if (window.gsap && window.gsap.globalTimeline) {
-                                window.gsap.globalTimeline.timeScale(newTimeScale);
-                            }
-                        }, 100);
-                    }
-                });
-            }
-        }, 2000);
+        // (Eliminado: ralentizaba todas las animaciones al 30% al hacer clic en un proyecto)
     </script>
 
 
-<script>window.LTSD_MODALS_CONFIG=window.LTSD_MODALS_CONFIG||{aboutTitle:"Sobre LT Studio Design",aboutHtml:'<div class="ltsd-about"><p>Escribí tu ABOUT acá.</p><div class="ltsd-about__services"><strong>Servicios:</strong><br>• Diseño Arquitectónico<br>• Planificación Urbana<br>• Diseño de Interiores<br>• Consultoría en Sostenibilidad<br>• Gestión de Proyectos</div></div>'};</script>
-<script src=""assets/ltsd-modals/ltsd-modals.js""></script>
+<script src="assets/about/about.js" defer></script>
 </body>
 </html>
 

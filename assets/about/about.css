@@ -1,0 +1,100 @@
+/* LT STUDIO DESIGN - panel About / Contact */
+
+/* Solo hay inglés: se oculta el selector de idioma del menú */
+.p-header__languageList { display: none !important; }
+
+.ltsd-about-overlay {
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 9000;
+    display: flex;
+    padding: 96px 24px 48px;
+    overflow-y: auto;
+    background: rgba(37, 37, 37, 0.97);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s;
+}
+.ltsd-about-overlay.is-open { opacity: 1; visibility: visible; }
+
+.ltsd-about {
+    width: 100%;
+    max-width: 760px;
+    margin: auto;
+    color: #fff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 300;
+}
+.ltsd-about p, .ltsd-about li { letter-spacing: normal; }
+.ltsd-about h2 {
+    margin: 0 0 28px;
+    font-size: clamp(26px, 4vw, 40px);
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+.ltsd-about p {
+    margin: 0 0 18px;
+    font-size: clamp(15px, 1.6vw, 18px);
+    line-height: 1.75;
+    color: rgba(255, 255, 255, 0.82);
+}
+.ltsd-about h3 {
+    margin: 36px 0 14px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.55);
+}
+.ltsd-about ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    gap: 10px;
+}
+.ltsd-about li {
+    font-size: clamp(15px, 1.6vw, 18px);
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.9);
+}
+.ltsd-about li span {
+    display: inline-block;
+    min-width: 130px;
+    color: rgba(255, 255, 255, 0.55);
+    font-size: 13px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+.ltsd-about a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    transition: border-color 0.3s ease;
+}
+.ltsd-about a:hover { border-bottom-color: #fff; }
+.ltsd-about a:focus-visible,
+.ltsd-about__close:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+
+.ltsd-about__close {
+    position: fixed;
+    top: 24px;
+    right: 28px;
+    padding: 10px 14px;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+    .ltsd-about-overlay { padding: 84px 20px 40px; }
+    .ltsd-about li span { display: block; min-width: 0; margin-bottom: 2px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .ltsd-about-overlay, .ltsd-about a { transition: none; }
+}

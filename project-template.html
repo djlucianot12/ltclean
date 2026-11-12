@@ -5,7 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="pageTitle">PROJECT - LT STUDIO DESIGN</title>
     <meta name="description" content="Architectural project by LT STUDIO DESIGN">
-    
+    <link rel="canonical" href="https://www.ltstudiodesign.com/project-template.html">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="LT STUDIO DESIGN">
+    <meta property="og:title" content="PROJECT - LT STUDIO DESIGN">
+    <meta property="og:description" content="Architectural project by LT STUDIO DESIGN">
+    <meta property="og:url" content="https://www.ltstudiodesign.com/project-template.html">
+    <meta property="og:image" content="https://www.ltstudiodesign.com/park-mansion/images/main.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
     <!-- Favicons -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHJlY3Qgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSIjMjUyNTI1Ii8+Cjx0ZXh0IHg9IjE2IiB5PSIyMiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZmZmZiIgZm9udC1zaXplPSIxNCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXdlaWdodD0iYm9sZCI+TFQ8L3RleHQ+Cjwvc3ZnPgo=">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
@@ -564,7 +572,7 @@
         let autoScrollInterval;
         let isAutoScrolling = false;
         let projectData = null;
-        let currentLanguage = 'es'; // Default language
+        let currentLanguage = 'en'; // Idioma fijo: inglés (ya no se pregunta al visitante)
 
         const fallbackProjectBackgrounds = {
             'park-mansion': 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&h=800&fit=crop',
@@ -665,7 +673,7 @@
             // Initialize page with selected language
             setTimeout(() => {
                 initPage();
-            }, 500);
+            }, 50);
         }
 
         // Get project name from URL parameter
@@ -762,6 +770,35 @@
 
             // Update page title and elements
             document.getElementById('pageTitle').textContent = `${project.name} - LT STUDIO DESIGN`;
+
+            // SEO: descripción, dirección oficial y vista previa al compartir (salen del config.json del proyecto)
+            try {
+                let seoDesc = String(description || subtitle || '').replace(/\s+/g, ' ').trim();
+                if (seoDesc.length > 155) { seoDesc = seoDesc.slice(0, 155).replace(/\s+\S*$/, '') + '…'; }
+                const pageUrl = `https://www.ltstudiodesign.com/project-template.html?project=${encodeURIComponent(projectName)}`;
+                const imgUrl = `https://www.ltstudiodesign.com/${projectName}/images/${media.main_image || media.mainImage || 'main.jpg'}`;
+                const seoTitle = `${project.name} - LT STUDIO DESIGN`;
+                const setMeta = (selector, attr, value) => { const el = document.querySelector(selector); if (el) el.setAttribute(attr, value); };
+                setMeta('meta[name="description"]', 'content', seoDesc);
+                setMeta('link[rel="canonical"]', 'href', pageUrl);
+                setMeta('meta[property="og:title"]', 'content', seoTitle);
+                setMeta('meta[property="og:description"]', 'content', seoDesc);
+                setMeta('meta[property="og:url"]', 'content', pageUrl);
+                setMeta('meta[property="og:image"]', 'content', imgUrl);
+                const ld = document.createElement('script');
+                ld.type = 'application/ld+json';
+                ld.textContent = JSON.stringify({
+                    '@context': 'https://schema.org',
+                    '@type': 'CreativeWork',
+                    name: project.name,
+                    description: seoDesc,
+                    image: imgUrl,
+                    url: pageUrl,
+                    creator: { '@type': 'Organization', name: 'LT STUDIO DESIGN', url: 'https://www.ltstudiodesign.com/' }
+                });
+                document.head.appendChild(ld);
+            } catch (seoError) { console.warn('SEO meta no actualizado', seoError); }
+
             document.getElementById('projectTitle').textContent = project.name;
             document.getElementById('projectSubtitle').textContent = subtitle;
             document.getElementById('projectDescription').textContent = description;
@@ -1113,16 +1150,8 @@
             // Initialize custom cursor FIRST
             initCustomCursor();
 
-            // Then show language modal
-            document.getElementById('languageModal').style.display = 'flex';
-
-            // Ensure cursor is visible over modal
-            const cursor = document.getElementById('cursor');
-            if (cursor) {
-                cursor.style.zIndex = '10002';
-                cursor.style.display = 'block';
-                cursor.style.opacity = '1';
-            }
+            // Ya no se muestra el selector de idioma: se carga directo en inglés
+            selectLanguage('en');
         }
 
         // Custom cursor functionality

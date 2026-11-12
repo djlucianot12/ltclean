@@ -1,6 +1,15 @@
 {
   "routes": [
     {
+      "src": "/(.*)\\.(jpg|jpeg|png|webp|svg|woff2)",
+      "headers": { "Cache-Control": "public, max-age=86400, stale-while-revalidate=604800" },
+      "continue": true
+    },
+    {
+      "src": "/(robots\\.txt|sitemap\\.xml)",
+      "dest": "/$1"
+    },
+    {
       "src": "/assets/(.*)",
       "dest": "/assets/$1"
     },
